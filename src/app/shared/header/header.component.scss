@@ -2,7 +2,7 @@
 
 header {
   @include dFlex($jc: space-between);
-  background-color: $bgcolor;
+
   position: sticky;
   height: 72px;
   padding: 16px;

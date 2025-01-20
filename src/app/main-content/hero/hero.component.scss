@@ -1,0 +1,44 @@
+@import "./../../../styles.scss";
+
+.hero {
+  position: relative;
+  flex-direction: column;
+  @include dFlex($jc: space-between);
+}
+
+.atf {
+  position: relative;
+  flex-direction: column;
+  @include dFlex();
+}
+
+h1 {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: 128px;
+  text-align: center;
+  line-height: 100%;
+}
+
+.subheadline-container {
+  @include dFlex();
+  position: relative;
+  text-align: center;
+  gap: 16px;
+  bottom: 140px;
+
+  > p {
+    font-weight: 700;
+    font-size: 40px;
+    // line-height: 40px;
+    text-align: center;
+    color: #00bc8f;
+  }
+}
+
+.underline-stroked {
+  // border-bottom: 4px;
+  background-color: black;
+  width: 400px;
+  height: 3px;
+}
