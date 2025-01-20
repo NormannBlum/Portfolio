@@ -1,0 +1,20 @@
+@import "./../../../styles.scss";
+
+header {
+  @include dFlex($jc: space-between);
+  background-color: $bgcolor;
+  position: sticky;
+  height: 72px;
+  padding: 16px;
+  //   top: 0;
+  //   z-index: 100;
+  //   width: 100%;
+  //   max-width: 1440px;
+}
+
+.logo {
+  > img {
+    height: 50px;
+    width: 50px;
+  }
+}
