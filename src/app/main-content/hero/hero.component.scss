@@ -1,21 +1,22 @@
 @import "./../../../styles.scss";
+@import "./../../../fonts.scss";
 
 .hero {
   position: relative;
-  flex-direction: column;
-  @include dFlex($jc: space-between);
+  @include dFlex($jc: flex-start, $fd: column);
+  height: 660px;
+  // padding: 0 16px;
 }
 
 .atf {
   position: relative;
-  flex-direction: column;
-  @include dFlex();
+  @include dFlex($fd: column);
 }
 
 h1 {
   font-family: "Syne", sans-serif;
   font-weight: 800;
-  font-size: 128px;
+  font-size: 96px;
   text-align: center;
   line-height: 100%;
 }
@@ -25,20 +26,47 @@ h1 {
   position: relative;
   text-align: center;
   gap: 16px;
-  bottom: 140px;
+  bottom: 116px;
 
   > p {
     font-weight: 700;
     font-size: 40px;
-    // line-height: 40px;
+    font-family: "Overpass", sans-serif;
     text-align: center;
-    color: #00bc8f;
+    color: $hlcolor;
   }
 }
 
 .underline-stroked {
-  // border-bottom: 4px;
   background-color: black;
-  width: 400px;
+  width: 500px;
   height: 3px;
+}
+
+.cta {
+  @include dFlex($jc: space-between, $ai: flex-end);
+  position: relative;
+  width: 100%;
+}
+
+.email-link {
+  position: absolute;
+  left: -100px;
+  transform: rotate(-90deg);
+  font-size: 24px;
+  text-align: left;
+  top: 40px;
+}
+
+.scroll-down {
+  @include dFlex($fd: column);
+  position: absolute;
+  right: 0;
+  top: -50px;
+
+  > p {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+  }
 }

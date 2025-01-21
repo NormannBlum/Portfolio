@@ -2,19 +2,18 @@
 
 header {
   @include dFlex($jc: space-between);
-
   position: sticky;
   height: 72px;
   padding: 16px;
-  //   top: 0;
-  //   z-index: 100;
-  //   width: 100%;
-  //   max-width: 1440px;
+  // top: 0;
+  // z-index: 100;
+  // width: 100%;
+  // max-width: 1440px;
 }
 
 .logo {
   > img {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
   }
 }
