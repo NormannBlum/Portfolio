@@ -4,7 +4,8 @@
 .hero {
   position: relative;
   @include dFlex($jc: flex-start, $fd: column);
-  height: 660px;
+  // height: 660px;
+  height: 100vh;
   // padding: 0 16px;
 }
 
@@ -16,21 +17,21 @@
 h1 {
   font-family: "Syne", sans-serif;
   font-weight: 800;
-  font-size: 96px;
+  font-size: 8rem;
   text-align: center;
-  line-height: 100%;
+  // line-height: 100%;
 }
 
 .subheadline-container {
   @include dFlex();
   position: relative;
   text-align: center;
-  gap: 16px;
-  bottom: 116px;
+  gap: 1rem; // 1rem = 16px
+  bottom: 10rem;
 
   > p {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 3rem;
     font-family: "Overpass", sans-serif;
     text-align: center;
     color: $hlcolor;
@@ -39,7 +40,7 @@ h1 {
 
 .underline-stroked {
   background-color: black;
-  width: 500px;
+  width: 40rem;
   height: 3px;
 }
 
@@ -51,21 +52,21 @@ h1 {
 
 .email-link {
   position: absolute;
-  left: -100px;
+  left: -6rem;
   transform: rotate(-90deg);
-  font-size: 24px;
+  font-size: 1.375rem;
   text-align: left;
-  top: 40px;
+  top: 12.5rem;
 }
 
 .scroll-down {
   @include dFlex($fd: column);
   position: absolute;
   right: 0;
-  top: -50px;
+  top: 6.25rem;
 
   > p {
-    font-size: 24px;
+    font-size: 1.375rem;
     text-align: center;
     margin: 0;
   }
