@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./styles/mixins.scss";
 @import "./styles/variables.scss";
+@import "./styles/fonts.scss";
 
 * {
   margin: 0;
@@ -18,7 +19,7 @@ body {
   justify-content: center;
   max-width: 1440px;
   margin: 0 auto;
-  background-color: $bgcolor;
+  background-color: $main-bg-color;
   font-family: "Overpass";
   background-image: url("./assets/icon/dots.svg");
   // width: 100%;
@@ -39,4 +40,13 @@ a {
 
 p {
   font-family: "Overpass";
+}
+
+h1, h2 {
+  font-family: "Syne";
+}
+
+h2 {
+  font-size: $h2-font-size;
+  font-weight: 800;
 }
