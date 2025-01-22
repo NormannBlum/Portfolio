@@ -1,5 +1,7 @@
 @import "./../../../styles.scss";
 
-p {
-    background-color: $hlcolor;
+.aboutme {
+    // position: relative;
+    // @include dFlex($jc: flex-start, $fd: column);
+    height: 100vh;
 }

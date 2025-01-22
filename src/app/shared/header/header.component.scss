@@ -5,8 +5,10 @@ header {
   position: sticky;
   height: 72px;
   padding: 16px;
-  // top: 0;
-  // z-index: 100;
+  z-index: 100;
+  top: 0;
+  background-color: $bgcolor;
+
   // width: 100%;
   // max-width: 1440px;
 }
