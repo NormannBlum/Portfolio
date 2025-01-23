@@ -49,4 +49,9 @@ h1, h2 {
 h2 {
   font-size: $h2-font-size;
   font-weight: 800;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $primary-hl-color;
+  }
 }
