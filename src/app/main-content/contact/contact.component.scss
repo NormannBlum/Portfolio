@@ -1,0 +1,11 @@
+@import "./../../../styles.scss";
+
+.contact {
+  position: relative;
+  min-height: 70vh;
+  padding: 0 4rem;
+}
+
+.contact-container {
+  @include dFlex($ai: center, $jc: flex-start, $fd: column);
+}
