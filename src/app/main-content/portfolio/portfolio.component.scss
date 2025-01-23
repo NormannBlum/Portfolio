@@ -1,0 +1,8 @@
+@import "./../../../styles.scss";
+
+.portfolio {
+  @include dFlex($ai: center, $jc: flex-start, $fd: column);
+  position: relative;
+  min-height: 100vh;
+  padding: 0 4rem;
+}

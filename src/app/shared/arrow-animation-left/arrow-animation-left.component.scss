@@ -1,0 +1,8 @@
+@import "./../../../styles.scss";
+
+.arrow-left-container {
+    @include dFlex($ai: flex-start, $jc: center, $fd: column);
+    padding: 0 4rem;
+    min-height: 20vh;
+    // position: relative;
+}

@@ -3,6 +3,6 @@
 .arrow-right-container {
     @include dFlex($ai: flex-end, $jc: center, $fd: column);
     padding: 0 4rem;
-    min-height: 30vh;
-    position: relative;
+    min-height: 20vh;
+    // position: relative;
 }

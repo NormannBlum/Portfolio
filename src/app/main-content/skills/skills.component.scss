@@ -1,0 +1,84 @@
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.skills {
+  padding: 0 4rem;
+  position: relative;
+  min-height: 50vh;
+}
+
+.skills-wrapper {
+  margin: 2rem;
+  border: 4px solid #000;
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    padding: 3rem;
+
+    .skill-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100px;
+    //   padding: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      > img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 0.5rem;
+        transition: transform 0.3s ease;
+      }
+
+      > span {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #333;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+        > img {
+          transform: rotate(10deg);
+        }
+      }
+    }
+  }
+
+  .skills-footer {
+    text-align: center;
+    margin-top: 2rem;
+
+    > img {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 1rem;
+    }
+
+    > p {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #333;
+
+      > a {
+        color: #00bc8f;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
