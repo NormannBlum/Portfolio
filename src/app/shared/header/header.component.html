@@ -5,7 +5,9 @@
     </div>
   </div>
 
-  <button class="burger-menu">
-    <img src="./../../../assets/animation/burger-menu-1.png" alt="burger-menu">
-  </button>
+  <div
+    class="hamburger"
+    (click)="toggleMenu()"
+    [ngClass]="{ toggleOpen: !isToggle, toggleClose: isToggle }"
+  ></div>
 </header>

@@ -22,8 +22,6 @@ body {
   background-color: $main-bg-color;
   font-family: "Overpass";
   background-image: url("./assets/icon/dots.svg");
-  // width: 100%;
-  // padding: 0;
 }
 
 button {
@@ -42,7 +40,8 @@ p {
   font-family: "Overpass";
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Syne";
 }
 

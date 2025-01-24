@@ -58,12 +58,14 @@ h2 {
 
   .skills-footer {
     text-align: center;
-    margin-top: 2rem;
+    // margin-top: 2rem;
+    margin-bottom: 3rem;
 
     > img {
       width: 70px;
       height: 70px;
       margin-bottom: 1rem;
+      cursor: pointer;
     }
 
     > p {
@@ -74,6 +76,7 @@ h2 {
       > a {
         color: #00bc8f;
         text-decoration: none;
+        cursor: pointer;
 
         &:hover {
           text-decoration: underline;

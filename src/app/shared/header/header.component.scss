@@ -8,14 +8,73 @@ header {
   z-index: 100;
   top: 0;
   background-color: $main-bg-color;
-
-  // width: 100%;
-  // max-width: 1440px;
 }
 
 .logo {
   > img {
     height: 60px;
     width: 60px;
+  }
+}
+
+.hamburger {
+  width: 80px;
+  height: 80px;
+
+  background-image: url("../../../assets/animation/hamburger1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.toggleOpen {
+  animation: hamburgerOpen 0.3s forwards;
+}
+
+.toggleClose {
+  animation: hamburgerClose 0.3s forwards;
+}
+
+@keyframes hamburgerOpen {
+  0% {
+    background-image: url("../../../assets/animation/hamburger1.png");
+  }
+
+  25% {
+    background-image: url("../../../assets/animation/hamburger2.png");
+  }
+
+  50% {
+    background-image: url("../../../assets/animation/hamburger3.png");
+  }
+
+  75% {
+    background-image: url("../../../assets/animation/hamburger4.png");
+  }
+
+  100% {
+    background-image: url("../../../assets/animation/hamburger5.png");
+  }
+}
+
+@keyframes hamburgerClose {
+  0% {
+    background-image: url("../../../assets/animation/hamburger5.png");
+  }
+
+  25% {
+    background-image: url("../../../assets/animation/hamburger4.png");
+  }
+
+  50% {
+    background-image: url("../../../assets/animation/hamburger3.png");
+  }
+
+  75% {
+    background-image: url("../../../assets/animation/hamburger2.png");
+  }
+
+  100% {
+    background-image: url("../../../assets/animation/hamburger1.png");
   }
 }

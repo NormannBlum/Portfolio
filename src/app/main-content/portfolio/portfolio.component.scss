@@ -5,4 +5,15 @@
   position: relative;
   min-height: 100vh;
   padding: 0 4rem;
+
+  > h2 {
+    margin-bottom: 3rem;
+  }
+}
+
+.portfolio-content {
+  > p {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
 }
