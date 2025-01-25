@@ -13,7 +13,7 @@ html {
   font-size: 16px; // 1rem = 16px
 }
 
-body {
+body, html {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,7 +46,8 @@ h2 {
 }
 
 h2 {
-  font-size: $h2-font-size;
+  // font-size: $h2-font-size;
+  font-size: clamp($h2-font-size-small, 5vw, $h2-font-size);
   font-weight: 800;
   transition: color 0.3s ease;
 

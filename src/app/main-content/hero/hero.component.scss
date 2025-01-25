@@ -5,7 +5,7 @@
   @include dFlex($jc: flex-start, $fd: column);
   height: 100vh;
   padding: 0 4rem;
-  // width: 100%;
+  width: 100%;
 }
 
 .atf {
@@ -16,7 +16,7 @@
 
 h1 {
   font-weight: 800;
-  font-size: 8rem;
+  font-size: clamp(2.75rem, 7.5vw, 8rem);
   text-align: center;
   line-height: 1;
 }
@@ -25,12 +25,13 @@ h1 {
   @include dFlex();
   position: relative;
   text-align: center;
-  gap: 2rem; // 1rem = 16px
+  gap: 2rem;
   bottom: -0.5rem;
 
   > p {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: clamp(1.375rem, 2.32vw, 3rem);
+
     text-align: center;
     color: $primary-hl-color;
   }
@@ -38,7 +39,7 @@ h1 {
 
 .underline-stroked {
   background-color: black;
-  width: 40rem;
+  width: clamp(10rem, 40vw, 42rem);
   height: 3px;
 }
 
