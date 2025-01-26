@@ -56,15 +56,13 @@ h1 {
   left: -6.5rem;
   transform: rotate(-90deg);
   font-size: $paragraph-font-size;
-  // text-align: left;
-  top: 27rem;
+  top: 26rem;
 }
 
 .scroll-down {
   @include dFlex($fd: column);
   position: absolute;
   right: -2rem;
-  // top: 6.25rem;
 
   > p {
     font-size: $paragraph-font-size;
@@ -75,43 +73,15 @@ h1 {
 
 .arrow-down-animation {
   position: relative;
-  width: 40px;
-  height: 80px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  animation: scrollArrowAnimation 2s infinite;
+  animation: slide-bottom 2s ease-in-out infinite both;
 }
 
-// @keyframes scrollArrowAnimation {
-//   0% {
-//     background-image: url("../../../assets/animation/ad1.png");
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-//   20% {
-//     background-image: url("../../../assets/animation/ad2.png");
-//     opacity: 1;
-//     transform: translateY(10px);
-//   }
-//   40% {
-//     background-image: url("../../../assets/animation/ad3.png");
-//     opacity: 1;
-//     transform: translateY(20px);
-//   }
-//   60% {
-//     background-image: url("../../../assets/animation/ad4.png");
-//     opacity: 1;
-//     transform: translateY(30px);
-//   }
-//   80% {
-//     background-image: url("../../../assets/animation/ad5.png");
-//     opacity: 0.5;
-//     transform: translateY(40px);
-//   }
-//   100% {
-//     background-image: url("../../../assets/animation/ad6.png");
-//     opacity: 0;
-//     transform: translateY(50px);
-//   }
-// }
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

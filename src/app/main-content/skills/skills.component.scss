@@ -43,8 +43,8 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   > img {
-    width: clamp(50px, 7vw, 70px);
-    height: clamp(50px, 7vw, 70px);
+    width: clamp(50px, 5vw, 70px);
+    height: clamp(50px, 5vw, 70px);
     margin-bottom: 0.5rem;
     transition: transform 0.3s ease;
   }
@@ -70,8 +70,8 @@
   margin-top: 2rem;
 
   > img {
-    width: clamp(50px, 7vw, 70px);
-    height: clamp(50px, 7vw, 70px);
+    width: clamp(50px, 5vw, 70px);
+    height: clamp(50px, 5vw, 70px);
     margin-bottom: 1rem;
   }
 
@@ -79,14 +79,14 @@
     font-size: 1rem;
     font-weight: bold;
     color: #333;
-  }
 
-  > a {
-    color: #00bc8f;
-    text-decoration: none;
-  }
+    > a {
+      color: #00bc8f;
+      text-decoration: none;
 
-  &:hover {
-    text-decoration: underline;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
