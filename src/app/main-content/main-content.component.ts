@@ -6,9 +6,6 @@ import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReferencesComponent } from './references/references.component';
-import { EplComponent } from './portfolio/epl/epl.component';
-import { JoinComponent } from './portfolio/join/join.component';
-import { PokedexComponent } from './portfolio/pokedex/pokedex.component';
 import { ArrowAnimationRightComponent } from '../shared/arrow-animation-right/arrow-animation-right.component';
 import { ArrowAnimationLeftComponent } from '../shared/arrow-animation-left/arrow-animation-left.component';
 
@@ -23,9 +20,6 @@ import { ArrowAnimationLeftComponent } from '../shared/arrow-animation-left/arro
     PortfolioComponent,
     ContactComponent,
     ReferencesComponent,
-    EplComponent,
-    JoinComponent,
-    PokedexComponent,
     ArrowAnimationRightComponent,
     ArrowAnimationLeftComponent,
   ],
