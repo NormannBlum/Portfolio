@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -15,4 +16,6 @@ export class SingleProjectsComponent {
   @Input() projectImage = '';
   @Input() projectLink = '';
   @Input() projectGithub = '';
+
+  @Input() reverseLayout = false;
 }

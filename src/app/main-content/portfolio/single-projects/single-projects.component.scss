@@ -3,12 +3,16 @@
 .project {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
   //   padding: 2rem;
-  background-color: $main-bg-color;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   min-height: 30vh;
+  flex-direction: row;
+
+  &.reverse-layout {
+    flex-direction: row-reverse;
+  }
 }
 
 .project-number {
