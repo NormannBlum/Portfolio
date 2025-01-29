@@ -3,10 +3,10 @@
 .project {
   display: flex;
   align-items: center;
+  position: relative;
   gap: 4rem;
   //   padding: 2rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
   min-height: 30vh;
   flex-direction: row;
 
@@ -76,7 +76,6 @@ h3 {
   transition: all 0.3s ease;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
   //   padding: 1rem 3rem;
-
   //   &:hover {
   //   background: black;
   //   color: white;
