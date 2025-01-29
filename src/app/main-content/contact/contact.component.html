@@ -1,5 +1,29 @@
 <section class="contact">
-    <h2>Say Hi!</h2>
-    <div class="contact-container"></div>
-  </section>
-  
+  <h2>Say Hi!</h2>
+  <p class="subheadline">Want to discuss a new project?</p>
+  <p class="description">Say hello! Let's discuss your ideas and make it happen.</p>
+
+  <div class="contact-container">
+    <div class="container">
+      <!-- <form (ngSubmit)="onSubmit()"> -->
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" placeholder="Your name.." required />
+
+        <label for="email">Your email</label>
+        <input type="email" id="email" name="email" placeholder="Your email.." required />
+
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" placeholder="Write something.." required></textarea>
+
+        <div class="privacy">
+          <input type="checkbox" id="privacy" name="privacy" required />
+          <label for="privacy">
+            I've read the <a href="#">privacy policy</a> and agree to the processing of my data.
+          </label>
+        </div>
+
+        <button type="submit" class="send-button" disabled>Send message</button>
+      <!-- </form> -->
+    </div>
+  </div>
+</section>

@@ -1,11 +1,116 @@
 @import "./../../../styles.scss";
 
 .contact {
+  @include dFlex($ai: center, $jc: center, $fd: column);
   position: relative;
   min-height: 70vh;
   padding: 0 4rem;
+  text-align: center;
+  color: $main-bg-color;
+  background: #000; 
+
+  h2 {
+    text-align: left;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: $main-bg-color;
+  }
+
+  .subheadline {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $primary-hl-color;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
 }
 
 .contact-container {
-  @include dFlex($ai: center, $jc: flex-start, $fd: column);
+  @include dFlex($ai: center, $jc: center , $fd: column);
+  margin-bottom: 4rem;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      text-align: left;
+      font-size: 1rem;
+      margin: 10px 0 5px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px 0;
+      border: none;
+      border-bottom: 1px solid $main-bg-color; 
+      background: transparent;
+      color: $main-bg-color;
+      font-size: 1rem;
+      outline: none;
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+
+    textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .privacy {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      margin: 20px 0;
+      
+      input {
+        width: auto;
+      }
+
+      a {
+        color: $primary-hl-color;
+        text-decoration: none;
+      }
+    }
+
+    .send-button {
+      margin-top: 10px;
+      padding: 12px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: 2px solid white;
+      background: transparent;
+      color: $main-bg-color;
+      width: 100%;
+      cursor: not-allowed;
+      // opacity: 0.3; 
+      transition: 0.3s;
+
+      &:hover {
+        background: $main-bg-color;
+        color: black;
+      }
+    }
+
+    /* Button aktivieren, wenn Checkbox geklickt wurde */
+    #privacy:checked ~ .send-button {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
 }
