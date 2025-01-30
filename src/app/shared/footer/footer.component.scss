@@ -1,50 +1,57 @@
 @import "./../../../styles.scss";
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: $main-bg-color;
+  padding: 4rem;
+
+  @media (max-width: 1024px) {
+    padding: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+
+  .footer-left {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    color: $main-bg-color;
-    padding: 20px;
-    
-    .footer-left {
-      display: flex;
-      flex-direction: column;
-      
-      .logo {
-        > img {
-          height: 60px;
-          width: 60px;
-        }
-      }
-      
-      .imprint {
-        color: $main-bg-color;
-        text-decoration: none;
-        font-size: 0.9rem;
-        margin-top: 5px;
+    flex-direction: column;
+
+    .logo {
+      > img {
+        height: 60px;
+        width: 60px;
       }
     }
-  
-    .footer-right {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-  
-      a {
-        text-decoration: none;
-        color: $main-bg-color;
-  
-        img {
-          width: 24px;
-          height: 24px;
-        }
-      }
-      
-      .legal-notice {
-        font-size: 0.9rem;
-      }
+
+    .imprint {
+      color: $main-bg-color;
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-top: 5px;
     }
   }
-  
+
+  .footer-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    a {
+      text-decoration: none;
+      color: $main-bg-color;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .legal-notice {
+      font-size: 0.9rem;
+    }
+  }
+}

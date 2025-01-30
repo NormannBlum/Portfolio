@@ -10,6 +10,14 @@ header {
   z-index: 100;
   top: 0;
   background-color: $main-bg-color;
+
+  @media (max-width: 1024px) {
+    padding: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 }
 
 .logo {

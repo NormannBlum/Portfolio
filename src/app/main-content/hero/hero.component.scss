@@ -2,23 +2,24 @@
 
 .hero {
   position: relative;
-  @include dFlex($jc: flex-start, $fd: column);
+  @include dFlex($jc: space-between, $fd: column);
   height: 100vh;
   padding: 0 4rem;
-  // width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  // width: 100%;
 }
 
 .atf {
   position: relative;
   @include dFlex($fd: column);
-  margin-top: 6rem;
+  flex-grow: 1;
+  // margin-top: 6rem;
 }
 
 h1 {
   font-weight: 800;
-  font-size: clamp(2.75rem, 7.5vw, 8rem);
+  font-size: clamp(2.75rem, 10vw, 8rem);
   text-align: center;
   line-height: 1;
 }
@@ -32,7 +33,7 @@ h1 {
 
   > p {
     font-weight: 700;
-    font-size: clamp(1.375rem, 2.32vw, 3rem);
+    font-size: clamp(1.375rem, 4vw, 3rem);
 
     text-align: center;
     color: $primary-hl-color;
@@ -50,7 +51,7 @@ h1 {
   position: relative;
   margin-top: 1rem;
   width: 100%;
-  height: 50vh;
+  height: 50%;
 }
 
 .email-link {
@@ -58,13 +59,14 @@ h1 {
   left: -6.5rem;
   transform: rotate(-90deg);
   font-size: $paragraph-font-size;
-  top: 26rem;
+  top: 20rem;
 }
 
 .scroll-down {
   @include dFlex($fd: column);
   position: absolute;
   right: -2rem;
+  top: 15rem;
 
   > p {
     font-size: $paragraph-font-size;

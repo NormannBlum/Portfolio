@@ -51,7 +51,7 @@ h3 {
 
 h2 {
   // font-size: $h2-font-size;
-  font-size: clamp($h2-font-size-small, 5vw, $h2-font-size);
+  font-size: clamp($h2-font-size-small, 10vw, $h2-font-size);
   font-weight: 800;
   transition: color 0.3s ease;
 
@@ -59,3 +59,4 @@ h2 {
     color: $primary-hl-color;
   }
 }
+
