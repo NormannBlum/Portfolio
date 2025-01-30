@@ -3,6 +3,8 @@
 .contact {
   @include dFlex($ai: center, $jc: center, $fd: column);
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
   min-height: 70vh;
   padding: 0 4rem;
   text-align: center;

@@ -14,14 +14,17 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1440px;
-  margin: 0 auto;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // max-width: 1440px;
+  // margin: 0 auto;
   background-color: $main-bg-color;
   font-family: "Overpass";
   background-image: url("./assets/icon/dots.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 button {

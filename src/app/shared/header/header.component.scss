@@ -2,6 +2,8 @@
 
 header {
   @include dFlex($jc: space-between);
+  max-width: 1440px;
+  margin: 0 auto;
   position: sticky;
   height: 72px;
   padding: 0 4rem;
