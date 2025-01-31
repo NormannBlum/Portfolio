@@ -7,14 +7,12 @@
   padding: 0 4rem;
   max-width: 1440px;
   margin: 0 auto;
-  // width: 100%;
 }
 
 .atf {
   position: relative;
   @include dFlex($fd: column);
   flex-grow: 1;
-  // margin-top: 6rem;
 }
 
 h1 {
@@ -62,30 +60,31 @@ h1 {
   top: 20rem;
 }
 
-.scroll-down {
+.scroll-down-container {
   @include dFlex($fd: column);
   position: absolute;
   right: -2rem;
-  top: 15rem;
-
-  > p {
-    font-size: $paragraph-font-size;
-    text-align: center;
-    margin: 0;
-  }
+  top: 14rem;
+  overflow: hidden;
 }
 
-.arrow-down-animation {
-  position: relative;
-  animation: slide-bottom 2s ease-in-out infinite both;
+.scroll-down-animation {
+  animation: arrow-down-slide 2s linear infinite;
 }
 
-@keyframes slide-bottom {
+.scroll-down-text {
+  position: absolute;
+  right: 0rem;
+  bottom: 6rem;
+  margin: 0;
+  font-size: $paragraph-font-size;
+}
+
+@keyframes arrow-down-slide {
   0% {
-    transform: translateY(-100px);
+    transform: translateY(-200px);
   }
-
   100% {
-    transform: translateY(0px);
+    transform: translateY(200px);
   }
 }
