@@ -5,13 +5,26 @@
   align-items: center;
   position: relative;
   gap: 4rem;
-  //   padding: 2rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   min-height: 30vh;
   flex-direction: row;
+  overflow: hidden;
 
   &.reverse-layout {
     flex-direction: row-reverse;
+
+    .project-info {
+      opacity: 0;
+      transform: translateX(80px);
+    }
+
+    &:hover .project-info {
+      animation: slideInFromRight 0.6s ease-out forwards;
+    }
+  }
+
+  &:hover .project-info {
+    animation: slideInFromLeft 0.6s ease-out forwards;
   }
 }
 
@@ -31,53 +44,77 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    transition: transform 0.3s ease-in-out;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+    z-index: 1;
   }
 
-  &:hover > img {
-    transform: scale(1.05);
+  &:hover img {
+    filter: grayscale(0%);
   }
 }
 
 .project-info {
   flex: 1;
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+  z-index: 0;
+
+  h3 {
+    font-size: 2.75rem;
+    font-weight: 800;
+  }
+
+  .tech-stack {
+    color: $primary-hl-color;
+    font-weight: 400;
+    margin: 0.5rem 0;
+    font-size: 1.375rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+
+  .github-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+  }
 }
 
-h3 {
-  font-size: 2.75rem;
-  font-weight: 800;
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-.tech-stack {
-  color: $primary-hl-color;
-  font-weight: 400;
-  margin: 0.5rem 0;
-  font-size: 1.375rem;
-}
-
-.description {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 1rem;
-}
-
-.github-button {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border: 2px solid black;
-  font-size: 1rem;
-  text-decoration: none;
-  font-weight: 400;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
-  //   padding: 1rem 3rem;
-  //   &:hover {
-  //   background: black;
-  //   color: white;
-  //   }
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
