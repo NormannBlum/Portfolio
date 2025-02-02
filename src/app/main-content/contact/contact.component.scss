@@ -5,16 +5,18 @@
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
-  min-height: 70vh;
+  min-height: 80vh;
   padding: 0 4rem;
   text-align: center;
   color: $main-bg-color;
   background: #000; 
+  clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
 
   h2 {
-    text-align: left;
+    align-self: flex-start;
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
     color: $main-bg-color;
   }
 
@@ -22,11 +24,11 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: $primary-hl-color;
+    margin-bottom: 1rem;
   }
 
   .description {
     font-size: 1.1rem;
-    margin-bottom: 30px;
   }
 }
 
@@ -36,10 +38,10 @@
 }
 
 .container {
-  background: rgba(255, 255, 255, 0.1);
+  // background: rgba(255, 255, 255, 0.1);
   padding: 40px;
   border-radius: 10px;
-  width: 500px;
+  width: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
   form {
@@ -64,7 +66,7 @@
       outline: none;
 
       &::placeholder {
-        color: rgba(255, 255, 255, 0.6);
+        color: $main-bg-color;
       }
     }
 
