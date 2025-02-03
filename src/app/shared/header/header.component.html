@@ -15,17 +15,18 @@
     <div class="overlay" [ngClass]="{ show: !isToggle }">
       <div class="overlay-content">
         <div class="component-links">
-          <a href="#link1">About me</a>
+          <a href="#about-me-section" (click)="scrollToSection($event, 'about-me-section')">About me</a>
         </div>
         <div class="component-links">
-          <a href="#link2">My skills</a>
+          <a href="#my-skills-section" (click)="scrollToSection($event, 'my-skills-section')">My skills</a>
         </div>
         <div class="component-links">
-          <a href="#link3">Portfolio</a>
+          <a href="#portfolio-section" (click)="scrollToSection($event, 'portfolio-section')">Portfolio</a>
         </div>
         <div class="overlay-footer">
           <div class="overlay-title">
-            <h2>Say Hi!</h2>
+            <!-- <h2>Say Hi!</h2> -->
+            <a href="#contact-section" (click)="scrollToSection($event, 'contact-section')">Say Hi!</a>
             <p>kontakt&#64;normann-blum.de</p>
           </div>
           <div class="overlay-links">
