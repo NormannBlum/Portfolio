@@ -9,15 +9,19 @@
   padding: 0 4rem;
   text-align: center;
   color: $main-bg-color;
-  background: #000; 
+  background: black;
   clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
 
   h2 {
     align-self: flex-start;
     font-weight: 800;
-    margin-top: 6rem;
-    margin-bottom: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
     color: $main-bg-color;
+
+    &:hover {
+      color: $primary-hl-color;
+    }
   }
 
   .subheadline {
@@ -33,14 +37,12 @@
 }
 
 .contact-container {
-  @include dFlex($ai: center, $jc: center , $fd: column);
+  @include dFlex($ai: center, $jc: center, $fd: column);
   margin-bottom: 4rem;
 }
 
 .container {
-  // background: rgba(255, 255, 255, 0.1);
   padding: 40px;
-  border-radius: 10px;
   width: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
@@ -59,7 +61,7 @@
       width: 100%;
       padding: 10px 0;
       border: none;
-      border-bottom: 1px solid $main-bg-color; 
+      border-bottom: 1px solid $main-bg-color;
       background: transparent;
       color: $main-bg-color;
       font-size: 1rem;
@@ -72,7 +74,7 @@
 
     textarea {
       resize: none;
-      height: 100px;
+      height: 10rem;
     }
 
     .privacy {
@@ -81,7 +83,7 @@
       gap: 10px;
       font-size: 0.9rem;
       margin: 20px 0;
-      
+
       input {
         width: auto;
       }
@@ -102,7 +104,7 @@
       color: $main-bg-color;
       width: 100%;
       cursor: not-allowed;
-      // opacity: 0.3; 
+      // opacity: 0.3;
       transition: 0.3s;
 
       &:hover {
@@ -111,7 +113,6 @@
       }
     }
 
-    /* Button aktivieren, wenn Checkbox geklickt wurde */
     #privacy:checked ~ .send-button {
       opacity: 1;
       cursor: pointer;

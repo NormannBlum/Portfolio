@@ -88,3 +88,127 @@ header {
     background-image: url("../../../assets/animation/hamburger1.png");
   }
 }
+
+.overlay {
+  display: none;
+  flex-direction: column;
+  z-index: 100;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background: $main-bg-color;
+}
+
+.overlay.show {
+  display: flex;
+}
+
+.overlay-content {
+  @include dFlex($jc: space-evenly, $fd: column);
+  height: 105vh;
+
+  a {
+    display: block;
+    color: black;
+    font-size: clamp(20px, 10vw, 78px);
+    font-weight: 700;
+    font-family: "Syne", sans-serif;
+    white-space: nowrap;
+  }
+}
+
+.overlay-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 3rem;
+  width: 100%;
+  height: 300px;
+  color: white;
+  background-color: black;
+  clip-path: polygon(0% 0%, 100% 50%, 100% 100%, 0% 100%);
+}
+
+.overlay-title {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  h2 {
+    width: 426px;
+    height: 78px;
+    font-size: 78px;
+    font-weight: 800;
+    &:hover {
+      color: $primary-hl-color;
+    }
+  }
+}
+
+.overlay-links {
+  display: flex;
+  gap: 3rem;
+
+  img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: translateY(-1rem);
+    }
+  }
+}
+
+// .component-links {
+//   height: 120px;
+//   width: 140px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: relative;
+//   cursor: pointer;
+// }
+
+// .component-links::before {
+//   content: "";
+//   position: absolute;
+//   bottom: 30px;
+//   left: 0;
+//   border-bottom: 4px solid black;
+//   border-left: 4px solid black;
+//   width: 20px;
+//   height: 20px;
+//   transition: none;
+//   animation: none;
+// }
+
+// .component-links:hover::before {
+//   animation: expand-and-border 1.5s ease-out forwards;
+// }
+
+// @keyframes expand-and-border {
+//   0% {
+//     width: 30px;
+//     height: 10px;
+//   }
+//   20% {
+//     width: 500px;
+//     height: 0px;
+//   }
+//   40% {
+//     width: 100%;
+//     height: 0px;
+//   }
+//   50% {
+//     width: 100%;
+//     height: 0px;
+//   }
+
+//   100% {
+//     width: 100px;
+//     border-left: none;
+//     transform: translateX(calc(400px));
+//   }
+// }

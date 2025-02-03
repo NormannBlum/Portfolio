@@ -1,14 +1,13 @@
 @import "./../../../styles.scss";
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include dFlex($jc: space-between);
   background-color: black;
   color: $main-bg-color;
   padding: 0 4rem;
   max-width: 1440px;
   margin: 0 auto;
+  height: 9rem;
 
   @media (max-width: 1024px) {
     padding: 2rem;
@@ -21,8 +20,9 @@
   .footer-left {
     display: flex;
     flex-direction: column;
-
+    
     .logo {
+      
       > img {
         height: 60px;
         width: 60px;
@@ -33,27 +33,44 @@
       color: $main-bg-color;
       text-decoration: none;
       font-size: 0.9rem;
-      margin-top: 5px;
+      margin-bottom: 2rem;
     }
   }
 
   .footer-right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    @include dFlex($fd: column);
+    gap: 0.5rem;
 
-    a {
-      text-decoration: none;
-      color: $main-bg-color;
+    .social-icons {
+      display: flex;
+      gap: 2rem;
 
-      img {
-        width: 24px;
-        height: 24px;
+      a {
+        text-decoration: none;
+        color: $main-bg-color;
+
+        img {
+          width: 24px;
+          height: 24px;
+          transition: transform 0.3s ease;
+
+          &:hover {
+            transform: translateY(-1rem);
+          }
+        }
       }
     }
 
     .legal-notice {
       font-size: 0.9rem;
+      color: $main-bg-color;
+      text-decoration: none;
+      margin-top: 0.5rem;
+      align-self: flex-end;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

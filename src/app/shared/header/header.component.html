@@ -5,9 +5,46 @@
     </div>
   </div>
 
-  <div
+  <nav>
+    <div
     class="hamburger"
     (click)="toggleMenu()"
     [ngClass]="{ toggleOpen: !isToggle, toggleClose: isToggle }"
   ></div>
+
+    <div class="overlay" [ngClass]="{ show: !isToggle }">
+      <div class="overlay-content">
+        <div class="component-links">
+          <a href="#link1">About me</a>
+        </div>
+        <div class="component-links">
+          <a href="#link2">My skills</a>
+        </div>
+        <div class="component-links">
+          <a href="#link3">Portfolio</a>
+        </div>
+        <div class="overlay-footer">
+          <div class="overlay-title">
+            <h2>Say Hi!</h2>
+            <p>kontakt&#64;normann-blum.de</p>
+          </div>
+          <div class="overlay-links">
+            <a href="https://github.com/NormannBlum" target="_blank"
+              ><img src="assets/icon/github.svg" alt="Github"
+            /></a>
+            <a href="mailto:kontakt@normann-blum.de" target="_blank"
+              ><img src="assets/icon/mail.svg" alt="Email"
+            /></a>
+            <a href="https://www.linkedin.com" target="_blank"
+              ><img
+                src="assets/icon/linkedin.svg"
+                alt="Linkedin"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 </header>
+
+
