@@ -1,21 +1,19 @@
 <section class="about-me" id="about-me-section">
   <h2>About me</h2>
-  
+
   <div class="about-me-content">
-    
     <div class="about-me-text">
-    
-        <p>
-          I'm a Front-End Developer based in Essen, Germany. I specialize in
-          turning designers visions and companies concepts into fully functional
-          and polished digital experiences. With a strong blend of creativity and
-          logical thinking, I transform ideas into high-quality products that
-          deliver real value.
-        </p>
-        <p>
-          If you believe I'd be a great fit for your project, feel free to reach
-          out - I'd love to collaborate!
-        </p>
+      <p>
+        I'm a Front-End Developer based in Essen, Germany. I specialize in
+        turning designers visions and companies concepts into fully functional
+        and polished digital experiences. With a strong blend of creativity and
+        logical thinking, I transform ideas into high-quality products that
+        deliver real value.
+      </p>
+      <p>
+        If you believe I'd be a great fit for your project, feel free to reach
+        out - I'd love to collaborate!
+      </p>
 
       <div class="about-me-details">
         <div class="detail-item">
@@ -27,8 +25,12 @@
           <span>Open to work Remote</span>
         </div>
       </div>
-      
-      <button class="about-me-button">Let's talk</button>
+      <button
+        class="about-me-button"
+        (click)="scrollToSection($event, 'contact-section')"
+      >
+        Let's Talk
+      </button>
     </div>
 
     <div class="about-me-image">

@@ -25,10 +25,10 @@
         </div>
         <div class="overlay-footer">
           <div class="overlay-title">
-            <!-- <h2>Say Hi!</h2> -->
-            <a href="#contact-section" (click)="scrollToSection($event, 'contact-section')">Say Hi!</a>
-            <p>kontakt&#64;normann-blum.de</p>
-          </div>
+            <h2 (click)="scrollToSection($event, 'contact-section')">Say Hi!</h2>
+            <a href="mailto:mail@normann-blum.de"
+            >kontakt&#64;normann-blum.de</a>
+        </div>
           <div class="overlay-links">
             <a href="https://github.com/NormannBlum" target="_blank"
               ><img src="assets/icon/github.svg" alt="Github"
