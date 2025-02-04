@@ -7,43 +7,73 @@
 
   <div class="contact-container">
     <div class="container">
-      <!-- <form (ngSubmit)="onSubmit()"> -->
-      <form>
+
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <label for="name"></label>
         <input
+          #name="ngModel"
+          [(ngModel)]="contactData.name"
           type="text"
           id="name"
           name="name"
           placeholder="Your name"
           required
         />
+        @if (!name.valid && name.touched && !name.disabled) {
+          <p class="error-message">Your name is required</p>
+          }    
 
         <label for="email"></label>
         <input
+          #email="ngModel"
+          [(ngModel)]="contactData.email"
           type="email"
           id="email"
           name="email"
           placeholder="Your email"
           required
+          pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
         />
+        @if (!email.valid && email.touched && !email.disabled) {
+          <p class="error-message">Your email is required</p>
+          }
 
         <label for="message"></label>
         <textarea
+          #message="ngModel"
+          minlength="4"
+          maxlength="500"
+          [(ngModel)]="contactData.message"
           id="message"
           name="message"
           placeholder="Your message"
           required
         ></textarea>
+        @if (!message.valid && message.touched && !message.disabled) {
+        <p class="error-message">Message is required</p>
+        }
 
-        <div class="privacy">
-          <input type="checkbox" id="privacy" name="privacy" required />
+        <div class="checkbox">
+          <input
+            type="checkbox"
+            id="privacy"
+            [(ngModel)]="contactData.privacyAccepted"
+            name="privacyAccepted"
+            required
+          />
           <label for="privacy">
             I've read the <a href="#">privacy policy</a> and agree to the
             processing of my data.
           </label>
         </div>
 
-        <button type="submit" class="send-button" disabled>Send message</button>
+        <button
+          type="submit"
+          class="send-button"
+          [disabled]="!contactForm.valid || !contactData.privacyAccepted"
+        >
+          Send message
+        </button>
       </form>
     </div>
   </div>
