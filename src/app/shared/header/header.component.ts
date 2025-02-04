@@ -23,4 +23,14 @@ export class HeaderComponent {
   toggleMenu() {
     this.isToggle = !this.isToggle;
   }
+
+  scrollToTop(): void {
+    // Prüfen, ob wir uns auf der Hauptseite befinden
+    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      // Falls wir auf einer anderen Seite sind, zur Hauptseite weiterleiten
+      window.location.href = '/';
+    }
+  }
 }
