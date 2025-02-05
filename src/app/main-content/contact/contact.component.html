@@ -55,18 +55,20 @@
 
         <div class="checkbox">
           <input
+            #checkbox="ngModel"
             type="checkbox"
             id="privacy"
             [(ngModel)]="contactData.checkPrivacy"
-            name="privacyAccepted"
+            name="checkPrivacy"
             required
           />
           <label for="privacy">
-            I've read the <a href="#">privacy policy</a> and agree to the
+            I've read the <a routerLink="/legalnotice">privacy policy</a> and agree to the
             processing of my data.
           </label>
         </div>
 
+        <div class="button-container">
         <button
           type="submit"
           class="send-button"
@@ -74,6 +76,7 @@
         >
           Send message
         </button>
+        </div>
       </form>
     </div>
   </div>

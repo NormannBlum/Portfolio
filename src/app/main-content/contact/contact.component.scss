@@ -92,6 +92,7 @@
         color: $primary-hl-color;
         text-decoration: none;
       }
+      
     }
 
     .send-button {
@@ -102,9 +103,9 @@
       border: 2px solid white;
       background: transparent;
       color: $main-bg-color;
-      width: 100%;
-      cursor: not-allowed;
-      // opacity: 0.3;
+      width: 50%;
+      // cursor: not-allowed;
+      opacity: 1;
       transition: 0.3s;
 
       &:hover {
@@ -113,9 +114,9 @@
       }
     }
 
-    #privacy:checked ~ .send-button {
-      opacity: 1;
-      cursor: pointer;
-    }
+    // #privacy:checked ~ .send-button {
+    //   opacity: 1;
+    //   cursor: pointer;
+    // }
   }
 }
