@@ -1,23 +1,29 @@
-@import "./../../../styles.scss";
+@import "../../../styles.scss";
 
-.contact {
-  @include dFlex($ai: center, $jc: center, $fd: column);
+.contact-container {
+  @include dFlex($fd: column);
   position: relative;
-  max-width: 1440px;
+  max-width: 1440p;
   margin: 0 auto;
-  min-height: 80vh;
-  padding: 0 4rem;
-  text-align: center;
-  color: $main-bg-color;
   background: black;
   clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
+  min-height: 80vh;
+  padding: 0 4rem;
+  color: $main-bg-color;
+}
 
-  h2 {
+.contact-header {
+  padding: 2%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > h2 {
     align-self: flex-start;
     font-weight: 800;
-    margin-top: 10rem;
-    margin-bottom: 4rem;
-    color: $main-bg-color;
+    margin-top: 4rem;
+    margin-bottom: 3.5rem;
 
     &:hover {
       color: $primary-hl-color;
@@ -36,87 +42,103 @@
   }
 }
 
-.contact-container {
-  @include dFlex($ai: center, $jc: center, $fd: column);
-  margin-bottom: 4rem;
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 6px 0 2px;
+  padding: 15px 25px;
+  color: $main-bg-color;
+  border: 4px solid transparent;
+  border-bottom: 2px solid $main-bg-color;
+  background-color: #000;
 }
 
-.container {
-  padding: 40px;
-  width: 100%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+textarea {
+  resize: none;
+  height: 10rem;
+}
 
-  form {
-    display: flex;
-    flex-direction: column;
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
 
-    label {
-      text-align: left;
-      font-size: 1rem;
-      margin: 10px 0 5px;
-    }
+.form-field span {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  transform: translateY(-50%);
+  font-family: "Overpass";
+  color: $main-bg-color;
+  text-transform: uppercase;
+  transition: 0.3s;
+  font-size: 12px;
+  pointer-events: none;
+}
 
-    input,
-    textarea {
-      width: 100%;
-      padding: 10px 0;
-      border: none;
-      border-bottom: 1px solid $main-bg-color;
-      background: transparent;
-      color: $main-bg-color;
-      font-size: 1rem;
-      outline: none;
+.form-field
+  :is(input, textarea):is(:focus, :valid:not(:placeholder-shown))
+  ~ span {
+  top: 6px;
+  left: 22px;
+  color: $main-bg-color;
+  background-color: black;
+  padding: 0 5px;
+}
 
-      &::placeholder {
-        color: $main-bg-color;
-      }
-    }
+.form-error {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 4px;
+}
 
-    textarea {
-      resize: none;
-      height: 10rem;
-    }
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
 
-    .checkbox {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 0.9rem;
-      margin: 20px 0;
+.form-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
 
-      input {
-        width: auto;
-      }
+button[type="submit"] {
+  background-color: transparent;
+  color: $main-bg-color;
+  padding: 12px 20px;
+  width: 50%;
+  border: solid 4px transparent;
+  border-color: $main-bg-color;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
 
-      a {
-        color: $primary-hl-color;
-        text-decoration: none;
-      }
-      
-    }
+button[type="submit"]:disabled {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.275);
+  color: rgba(255, 255, 255, 0.275);
+  cursor: not-allowed;
+}
 
-    .send-button {
-      margin-top: 10px;
-      padding: 12px;
-      font-size: 1rem;
-      font-weight: bold;
-      border: 2px solid white;
-      background: transparent;
-      color: $main-bg-color;
-      width: 50%;
-      // cursor: not-allowed;
-      opacity: 1;
-      transition: 0.3s;
+.privacy-checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
 
-      &:hover {
-        background: $main-bg-color;
-        color: black;
-      }
-    }
-
-    // #privacy:checked ~ .send-button {
-    //   opacity: 1;
-    //   cursor: pointer;
-    // }
+  a {
+    color: $primary-hl-color;
   }
+}
+
+.privacy-checkbox input[type="checkbox"] {
+  margin-right: 12px;
 }

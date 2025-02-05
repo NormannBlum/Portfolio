@@ -19,11 +19,11 @@ export class ContactComponent {
     name: '',
     email: '',
     message: '',
-    checkPrivacy: false,
+    privacy: false,
 
   };
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://normann-blum.de/sendMail.php',
@@ -37,7 +37,7 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({

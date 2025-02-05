@@ -1,83 +1,85 @@
-<section class="contact" id="contact-section">
-  <h2>Say Hi!</h2>
-  <p class="subheadline">Want to discuss a new project?</p>
-  <p class="description">
-    Say hello! Let's discuss your ideas and make it happen.
-  </p>
+<div class="contact-container">
+  <div class="contact-header">
+    <h2>Say Hi!</h2>
+    <p class="subheadline">Want to discuss a new project?</p>
+    <p class="description">
+      Say hello! Let's discuss your ideas and make it happen.
+    </p>
+  </div>
 
-  <div class="contact-container">
-    <div class="container">
-
-      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-        <label for="name"></label>
+  <div class="form-wrapper">
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+      <div class="form-field">
         <input
           #name="ngModel"
+          minlength="2"
           [(ngModel)]="contactData.name"
           type="text"
           id="name"
           name="name"
-          placeholder="Your name"
           required
         />
-        @if (!name.valid && name.touched && !name.disabled) {
-          <p class="error-message">Your name is required</p>
-          }    
+        <span>Your name</span>
+      </div>
 
-        <label for="email"></label>
+      @if (!name.valid && name.touched && !name.disabled) {
+      <p class="form-error">Your name is required</p>
+      }
+
+      <div class="form-field">
         <input
           #email="ngModel"
           [(ngModel)]="contactData.email"
           type="email"
           id="email"
           name="email"
-          placeholder="Your email"
           required
           pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
         />
-        @if (!email.valid && email.touched && !email.disabled) {
-          <p class="error-message">Your email is required</p>
-          }
+        <span>Your email</span>
+      </div>
 
-        <label for="message"></label>
+      @if (!email.valid && email.touched && !email.disabled) {
+      <p class="form-error">Your email is required</p>
+      }
+
+      <div class="form-field">
         <textarea
           #message="ngModel"
           minlength="4"
-          maxlength="500"
+          maxlength="1000"
           [(ngModel)]="contactData.message"
           id="message"
           name="message"
-          placeholder="Your message"
           required
         ></textarea>
+        <span>Your message</span>
+
         @if (!message.valid && message.touched && !message.disabled) {
-        <p class="error-message">Message is required</p>
+        <p class="form-error">Your message is required</p>
         }
-
-        <div class="checkbox">
-          <input
-            #checkbox="ngModel"
-            type="checkbox"
-            id="privacy"
-            [(ngModel)]="contactData.checkPrivacy"
-            name="checkPrivacy"
-            required
-          />
-          <label for="privacy">
-            I've read the <a routerLink="/legalnotice">privacy policy</a> and agree to the
-            processing of my data.
-          </label>
-        </div>
-
-        <div class="button-container">
+      </div>
+      <div class="privacy-checkbox">
+        <input
+          type="checkbox"
+          id="privacy"
+          [(ngModel)]="contactData.privacy"
+          name="privacy"
+          required
+        />
+        <label for="privacy">
+          I've read the <a routerLink="/legalnotice">Privacy policy</a> and
+          agree to the processing of my data as outlined.
+        </label>
+      </div>
+      <div class="form-actions">
         <button
           type="submit"
-          class="send-button"
-          [disabled]="!contactForm.valid || !contactData.checkPrivacy"
+          [disabled]="!contactForm.valid || !contactData.privacy"
         >
           Send message
         </button>
-        </div>
-      </form>
-    </div>
+      </div>
+    </form>
   </div>
-</section>
+</div>
