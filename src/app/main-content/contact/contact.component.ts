@@ -17,7 +17,7 @@ export class ContactComponent {
     name: '',
     email: '',
     message: '',
-    privacyAccepted: false,
+    checkPrivacy: false,
 
   };
 

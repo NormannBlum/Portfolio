@@ -57,7 +57,7 @@
           <input
             type="checkbox"
             id="privacy"
-            [(ngModel)]="contactData.privacyAccepted"
+            [(ngModel)]="contactData.checkPrivacy"
             name="privacyAccepted"
             required
           />
@@ -70,7 +70,7 @@
         <button
           type="submit"
           class="send-button"
-          [disabled]="!contactForm.valid || !contactData.privacyAccepted"
+          [disabled]="!contactForm.valid || !contactData.checkPrivacy"
         >
           Send message
         </button>
