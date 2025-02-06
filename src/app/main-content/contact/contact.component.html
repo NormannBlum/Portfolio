@@ -1,4 +1,4 @@
-<div class="contact-container">
+<div class="contact-container" id="contact-section">
   <div class="contact-header">
     <h2>Say Hi!</h2>
     <p class="subheadline">Want to discuss a new project?</p>
@@ -17,6 +17,7 @@
           type="text"
           id="name"
           name="name"
+          placeholder=""
           required
         />
         <span>Your name</span>
@@ -34,6 +35,7 @@
           id="email"
           name="email"
           required
+          placeholder=""
           pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
         />
         <span>Your email</span>
@@ -51,6 +53,7 @@
           [(ngModel)]="contactData.message"
           id="message"
           name="message"
+          placeholder=""
           required
         ></textarea>
         <span>Your message</span>
