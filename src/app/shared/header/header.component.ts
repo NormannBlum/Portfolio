@@ -25,11 +25,12 @@ export class HeaderComponent {
   }
 
   scrollToTop(): void {
-    // Prüfen, ob wir uns auf der Hauptseite befinden
-    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+    if (
+      window.location.pathname === '/' ||
+      window.location.pathname === '/index.html'
+    ) {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-      // Falls wir auf einer anderen Seite sind, zur Hauptseite weiterleiten
       window.location.href = '/';
     }
   }
