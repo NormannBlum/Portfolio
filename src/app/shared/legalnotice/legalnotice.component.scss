@@ -1,17 +1,19 @@
 @import "./../../../styles.scss";
 
 .legalnotice {
-    @include dFlex($fd: column);
-    text-align: center;
-    padding: 2rem;
+  @include dFlex($fd: column);
+  text-align: center;
+  padding: 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 h1 {
-    font-size: 2rem;
+  font-size: 3rem;
 }
 
 h2 {
-    font-size: 2rem;
-    margin-top: 4rem;
-    font-family: Overpass;
+  font-size: 2rem;
+  margin-top: 4rem;
+  font-family: Overpass;
 }
