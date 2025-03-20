@@ -95,7 +95,6 @@ header {
   flex-direction: column;
   z-index: 100;
   position: fixed;
-  top: 70px;
   left: 0;
   right: 0;
   background: $main-bg-color;
@@ -109,7 +108,7 @@ header {
 
 .overlay-content {
   @include dFlex($jc: space-evenly, $fd: column);
-  height: 107vh;
+  height: 106vh;
 
   a {
     display: block;
@@ -141,9 +140,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 3rem;
+  padding: 64px 64px;
   width: 100%;
-  height: 300px;
+  height: 28%;
   color: white;
   background-color: black;
   clip-path: polygon(0% 0%, 100% 50%, 100% 100%, 0% 100%);
@@ -160,7 +159,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 20px;
+  // gap: 20px;
 
   h2 {
     font-size: 78px;

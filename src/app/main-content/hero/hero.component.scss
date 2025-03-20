@@ -3,7 +3,7 @@
 .hero {
   position: relative;
   @include dFlex($jc: space-between, $fd: column);
-  height: 100vh;
+  height: calc(100vh - 72px);
   padding: 0 4rem;
   max-width: 1440px;
   margin: 0 auto;
@@ -57,14 +57,14 @@ h1 {
   left: -6.5rem;
   transform: rotate(-90deg);
   font-size: $paragraph-font-size;
-  top: 20rem;
+  bottom: 10rem;
 }
 
 .scroll-down-container {
   @include dFlex($fd: column);
   position: absolute;
   right: -2rem;
-  top: 14rem;
+  bottom: 6rem;
   overflow: hidden;
 }
 
@@ -75,7 +75,7 @@ h1 {
 .scroll-down-text {
   position: absolute;
   right: 0rem;
-  bottom: 6rem;
+  bottom: 2rem;
   margin: 0;
   font-size: $paragraph-font-size;
 }
