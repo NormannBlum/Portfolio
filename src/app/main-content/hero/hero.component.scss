@@ -17,7 +17,7 @@
 
 h1 {
   font-weight: 800;
-  font-size: clamp(2.75rem, 10vw, 8rem);
+  font-size: clamp(2rem, 10vw, 8rem);
   text-align: center;
   line-height: 1;
 }
@@ -40,7 +40,7 @@ h1 {
 
 .underline-stroked {
   background-color: black;
-  width: clamp(10rem, 40vw, 42rem);
+  width: clamp(8rem, 40vw, 42rem);
   height: 3px;
 }
 
@@ -88,3 +88,30 @@ h1 {
     transform: translateY(200px);
   }
 }
+
+@media (max-width: 1024px) {
+  .email-link {
+    left: -8.5rem;
+  }
+  .scroll-down-text {
+    right: -2rem;
+  }
+  .scroll-down-container {
+    right: -4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .email-link {
+    left: -10.5rem;
+  }
+  .scroll-down-text {
+    right: -3rem;
+  }
+  .scroll-down-container {
+    right: -5rem;
+  }
+}
+
+// @media (max-width: 480px) {
+// }
