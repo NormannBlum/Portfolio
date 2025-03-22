@@ -75,3 +75,26 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 2rem 1rem;
+
+    .footer-left,
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-right {
+      .legal-notice {
+        align-self: center;
+      }
+    }
+  }
+}

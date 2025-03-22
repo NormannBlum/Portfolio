@@ -10,6 +10,14 @@
   min-height: 65vh;
   padding: 0 4rem;
   color: $main-bg-color;
+
+  @media (max-width: 768px) {
+    clip-path: polygon(0% 5%, 100% 15%, 100% 100%, 0% 100%);
+  }
+
+  @media (max-width: 480px) {
+    clip-path: polygon(0% 10%, 100% 15%, 100% 100%, 0% 100%);
+  }
 }
 
 .contact-header {
@@ -39,6 +47,13 @@
     font-size: 1.1rem;
     margin-bottom: 1rem;
   }
+
+  .subheadline,
+  .description {
+    width: 100%;
+    min-width: 250px;
+    text-align: center;
+  }
 }
 
 input[type="text"],
@@ -46,6 +61,7 @@ input[type="email"],
 select,
 textarea {
   width: 100%;
+  min-width: 250px;
   box-sizing: border-box;
   margin: 8px 0 4px;
   padding: 16px 25px;
@@ -106,13 +122,13 @@ textarea {
 button[type="submit"] {
   background-color: transparent;
   color: $main-bg-color;
-  padding: 12px 20px;
-  // width: 50%;
+  padding: 16px 48px;
   border: solid 4px transparent;
   border-color: $main-bg-color;
   font-weight: bold;
   cursor: pointer;
   position: relative;
+  margin-bottom: 2rem;
 }
 
 button[type="submit"]:disabled {
@@ -142,7 +158,7 @@ button[type="submit"]:disabled {
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  margin: 1.5rem auto;
+  // margin: 1.5rem auto;
   width: fit-content;
   padding: 1rem 1.5rem;
   background-color: #00bc8f;
