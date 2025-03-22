@@ -43,15 +43,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  column-gap: 2rem;
+  row-gap: 2rem;
   padding: 2rem 0;
+
+  @media (max-width: 480px) {
+    row-gap: 1rem;
+  }
 }
 
 .skill-item {
   @include dFlex($fd: column);
   text-align: center;
-  width: 100px;
+  width: calc((100% - 4rem) / 3); // 3 Spalten inkl. gap (2rem * 2)
+  flex: 0 1 15%; // 👉 5 Items pro Reihe
+  max-width: 25%;
   padding: 1rem;
+  box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   > img {
@@ -62,7 +70,7 @@
   }
 
   > span {
-    font-size: 1rem;
+    font-size: clamp(12px, 3vw, 16px);
     font-weight: bold;
     color: black;
   }
@@ -80,15 +88,12 @@
 
 .skills-footer {
   @include dFlex();
-  text-align: center;
   gap: 1rem;
-  // margin-top: 2rem;
 
   > img {
     width: clamp(50px, 5vw, 70px);
     height: clamp(50px, 5vw, 70px);
     gap: 2rem;
-    // margin-bottom: 1rem;
 
     &:hover {
       animation: orbitBounceAnimation 0.3s forwards linear;
