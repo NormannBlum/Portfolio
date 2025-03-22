@@ -62,6 +62,7 @@
         <p class="form-error">Your message is required</p>
         }
       </div>
+
       <div class="privacy-checkbox">
         <input
           type="checkbox"
@@ -75,6 +76,14 @@
           agree to the processing of my data as outlined.
         </label>
       </div>
+
+      @if (showSuccessMessage) {
+        <div class="success-toast">
+          <span class="icon">✔</span>
+          <span>Message sent successfully!</span>
+        </div>
+      }
+
       <div class="form-actions">
         <button
           type="submit"

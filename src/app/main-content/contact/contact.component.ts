@@ -12,7 +12,6 @@ import { RouterLink } from '@angular/router';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
-
   http = inject(HttpClient);
 
   contactData = {
@@ -20,10 +19,10 @@ export class ContactComponent {
     email: '',
     message: '',
     privacy: false,
-
   };
 
   mailTest = false;
+  showSuccessMessage = false;
 
   post = {
     endPoint: 'https://normann-blum.de/sendMail.php',
@@ -36,20 +35,49 @@ export class ContactComponent {
     },
   };
 
+  // onSubmit(ngForm: NgForm) {
+  //   if (ngForm.submitted && ngForm.form.valid) {
+  //     this.http
+  //       .post(this.post.endPoint, this.post.body(this.contactData))
+  //       .subscribe({
+  //         next: (response) => {
+  //           ngForm.resetForm();
+  //         },
+  //         error: (error) => {
+  //           console.error(error);
+  //         },
+  //         complete: () => console.info('send post complete'),
+  //       });
+  //   } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+  //     ngForm.resetForm();
+  //   }
+  // }
+
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
+            this.showSuccessMessage = true;
+
+            setTimeout(() => {
+              this.showSuccessMessage = false;
+            }, 3000);
+
             ngForm.resetForm();
           },
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+      this.showSuccessMessage = true;
+
+      setTimeout(() => {
+        this.showSuccessMessage = false;
+      }, 3000);
+
       ngForm.resetForm();
     }
   }
