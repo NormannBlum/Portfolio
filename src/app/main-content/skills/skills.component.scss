@@ -8,11 +8,11 @@
   margin: 0 auto;
   min-height: 50vh;
 
-  @media (max-width: $bp-desktop) {
+  @media (max-width: 1024px) {
     padding: 2rem;
   }
 
-  @media (max-width: $bp-tablet) {
+  @media (max-width: 768px) {
     padding: 1rem;
   }
 }
@@ -33,7 +33,7 @@
     text-align: center;
     white-space: nowrap;
 
-    @media (max-width: $bp-mobile-lg) {
+    @media (max-width: 576px) {
       padding: 0 0.5rem;
     }
   }

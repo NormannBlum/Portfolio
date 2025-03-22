@@ -9,13 +9,15 @@
   margin: 0 auto;
 
   > h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 }
 
 .portfolio-content {
   > p {
-    margin-bottom: 3rem;
+    // margin-bottom: 3rem;
+    margin: 2rem;
     text-align: center;
+    font-size: clamp(16px, 3vw, 22px);
   }
 }
