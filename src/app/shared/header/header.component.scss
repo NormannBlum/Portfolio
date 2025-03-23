@@ -122,17 +122,31 @@ header {
 
 .component-links {
   position: relative;
+  background-image: url("../../../assets/animation/link-hover-default.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 0px bottom 0px;
+  transition: background-image 125ms ease-in-out, color 125ms ease-in-out;
+  padding-left: 16px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: -20px;
-    border-bottom: 4px solid black;
-    border-left: 4px solid black;
-    width: 20px;
-    height: 30px;
-    transition: width 0.5s ease, transform 0.5s ease;
+  &:hover {
+    animation: link-hover-animation 0.15s ease-in-out forwards;
+    transition: color 125ms ease-in-out;
+    cursor: pointer;
+  }
+}
+
+@keyframes link-hover-animation {
+  0% {
+    background-image: url("../../../assets/animation/link-hover-default.png");
+  }
+
+  50% {
+    background-image: url("../../../assets/animation/link-hover-variant1.png");
+  }
+
+  100% {
+    background-image: url("../../../assets/animation/link-hover-variant2.png");
   }
 }
 
