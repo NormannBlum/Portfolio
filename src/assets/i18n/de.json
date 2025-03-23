@@ -1,7 +1,18 @@
 {
   "header-component-links": {
-    "Aboutme": "Über mich",
-    "MySkills": "Meine Skills",
-    "Portfolio": "Portfolio"
+    "aboutme": "Über mich",
+    "mySkills": "Meine Skills",
+    "portfolio": "Portfolio"
+  },
+
+  "about-me": {
+    "title": "Über mich",
+    "info": {
+      "description": "Ich bin Front-End-Entwickler aus Essen, Deutschland. Ich bin darauf spezialisiert, die Visionen von Designern und die Konzepte von Unternehmen in voll funktionsfähige und ausgefeilte digitale Erlebnisse umzusetzen. Mit einer starken Mischung aus Kreativität und logischem Denken verwandle ich Ideen in hochwertige Produkte, die einen echten Mehrwert bieten.",
+      "detail": "Wenn Sie glauben, dass ich gut zu Ihrem Projekt passe, melden Sie sich bei mir - ich würde gerne mit Ihnen zusammenarbeiten!",
+      "location": "Standort Essen",
+      "remote": "Remote möglich",
+      "message": "Lass uns reden!"
+    }
   }
 }

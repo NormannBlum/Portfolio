@@ -39,7 +39,7 @@
               href="#about-me-section"
               (click)="scrollToSection($event, 'about-me-section')"
               >{{
-                "header-component-links.Aboutme" | translate
+                "header-component-links.aboutme" | translate
               }}</a
             >
           </div>
@@ -47,14 +47,18 @@
             <a
               href="#my-skills-section"
               (click)="scrollToSection($event, 'my-skills-section')"
-              >My skills</a
+              >{{
+                "header-component-links.mySkills" | translate
+              }}</a
             >
           </div>
           <div class="component-links">
             <a
               href="#portfolio-section"
               (click)="scrollToSection($event, 'portfolio-section')"
-              >Portfolio</a
+              >{{
+                "header-component-links.portfolio" | translate
+              }}</a
             >
           </div>
           <div class="overlay-footer">

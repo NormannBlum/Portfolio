@@ -9,7 +9,7 @@ import {
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, TranslatePipe, TranslateDirective],
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })

@@ -1,32 +1,31 @@
 <section class="about-me" id="about-me-section">
-  <h2>About me</h2>
+  <h2>{{ "about-me.title" | translate }}</h2>
 
   <div class="about-me-content">
     <div class="about-me-text">
       <p>
-        I'm a Front-End Developer based in Essen, Germany. I specialize in
-        turning designers visions and companies concepts into fully functional
-        and polished digital experiences. With a strong blend of creativity and
-        logical thinking, I transform ideas into high-quality products that
-        deliver real value.
+        {{ "about-me.info.description" | translate }}
       </p>
       <p>
-        If you believe I'd be a great fit for your project, feel free to reach
-        out - I'd love to collaborate!
+        {{ "about-me.info.detail" | translate }}
       </p>
 
       <div class="about-me-details">
         <div class="detail-item">
           <img src="assets/icon/house.png" alt="House icon" />
-          <span>Based in Essen</span>
+          <span>{{ "about-me.info.location" | translate }}</span>
         </div>
         <div class="detail-item">
           <img src="assets/icon/laptop.png" alt="Laptop icon" />
-          <span>Open to work Remote</span>
+          <span>{{ "about-me.info.remote" | translate }}</span>
         </div>
       </div>
-      <a href="#contact-section" (click)="scrollToSection($event, 'contact-section')" class="about-me-button">
-        Let's Talk
+      <a
+        href="#contact-section"
+        (click)="scrollToSection($event, 'contact-section')"
+        class="about-me-button"
+      >
+        {{ "about-me.info.message" | translate }}
       </a>
     </div>
 
