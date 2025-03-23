@@ -8,20 +8,21 @@
   <div class="right-section">
     <div class="language-toggle">
       <button
-        class="lang-btn"
-        [ngClass]="{ active: currentLang === 'EN' }"
-        (click)="setLanguage('EN')"
-      >
-        EN
-      </button>
+  class="lang-btn"
+  [class.active]="translate.currentLang === 'en'"
+  (click)="changeLanguage('en')"
+>
+  EN
+</button>
 
-      <button
-        class="lang-btn"
-        [ngClass]="{ active: currentLang === 'DE' }"
-        (click)="setLanguage('DE')"
-      >
-        DE
-      </button>
+<button
+  class="lang-btn"
+  [class.active]="translate.currentLang === 'de'"
+  (click)="changeLanguage('de')"
+>
+  DE
+</button>
+
     </div>
 
     <nav>
@@ -37,7 +38,9 @@
             <a
               href="#about-me-section"
               (click)="scrollToSection($event, 'about-me-section')"
-              >About me</a
+              >{{
+                "header-component-links.Aboutme" | translate
+              }}</a
             >
           </div>
           <div class="component-links">
