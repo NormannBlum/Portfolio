@@ -5,58 +5,78 @@
     </div>
   </div>
 
-  <nav>
-    <div
-      class="hamburger"
-      (click)="toggleMenu()"
-      [ngClass]="{ toggleOpen: !isToggle, toggleClose: isToggle }"
-    ></div>
+  <div class="right-section">
+    <div class="language-toggle">
+      <button
+        class="lang-btn"
+        [ngClass]="{ active: currentLang === 'EN' }"
+        (click)="setLanguage('EN')"
+      >
+        EN
+      </button>
 
-    <div class="overlay" [ngClass]="{ show: !isToggle }">
-      <div class="overlay-content">
-        <div class="component-links">
-          <a
-            href="#about-me-section"
-            (click)="scrollToSection($event, 'about-me-section')"
-            >About me</a
-          >
-        </div>
-        <div class="component-links">
-          <a
-            href="#my-skills-section"
-            (click)="scrollToSection($event, 'my-skills-section')"
-            >My skills</a
-          >
-        </div>
-        <div class="component-links">
-          <a
-            href="#portfolio-section"
-            (click)="scrollToSection($event, 'portfolio-section')"
-            >Portfolio</a
-          >
-        </div>
-        <div class="overlay-footer">
-          <div class="overlay-title">
-            <h2 (click)="scrollToSection($event, 'contact-section')">
-              Say Hi!
-            </h2>
-            <a href="mailto:mail@normann-blum.de"
-              >kontakt&#64;normann-blum.de</a
+      <button
+        class="lang-btn"
+        [ngClass]="{ active: currentLang === 'DE' }"
+        (click)="setLanguage('DE')"
+      >
+        DE
+      </button>
+    </div>
+
+    <nav>
+      <div
+        class="hamburger"
+        (click)="toggleMenu()"
+        [ngClass]="{ toggleOpen: !isToggle, toggleClose: isToggle }"
+      ></div>
+
+      <div class="overlay" [ngClass]="{ show: !isToggle }">
+        <div class="overlay-content">
+          <div class="component-links">
+            <a
+              href="#about-me-section"
+              (click)="scrollToSection($event, 'about-me-section')"
+              >About me</a
             >
           </div>
-          <div class="overlay-links">
-            <a href="https://github.com/NormannBlum" target="_blank"
-              ><img src="assets/icon/github.svg" alt="Github"
-            /></a>
-            <a href="mailto:kontakt@normann-blum.de" target="_blank"
-              ><img src="assets/icon/mail.svg" alt="Email"
-            /></a>
-            <a href="https://www.linkedin.com" target="_blank"
-              ><img src="assets/icon/linkedin.svg" alt="Linkedin"
-            /></a>
+          <div class="component-links">
+            <a
+              href="#my-skills-section"
+              (click)="scrollToSection($event, 'my-skills-section')"
+              >My skills</a
+            >
+          </div>
+          <div class="component-links">
+            <a
+              href="#portfolio-section"
+              (click)="scrollToSection($event, 'portfolio-section')"
+              >Portfolio</a
+            >
+          </div>
+          <div class="overlay-footer">
+            <div class="overlay-title">
+              <h2 (click)="scrollToSection($event, 'contact-section')">
+                Say Hi!
+              </h2>
+              <a href="mailto:mail@normann-blum.de"
+                >kontakt&#64;normann-blum.de</a
+              >
+            </div>
+            <div class="overlay-links">
+              <a href="https://github.com/NormannBlum" target="_blank"
+                ><img src="assets/icon/github.svg" alt="Github"
+              /></a>
+              <a href="mailto:kontakt@normann-blum.de" target="_blank"
+                ><img src="assets/icon/mail.svg" alt="Email"
+              /></a>
+              <a href="https://www.linkedin.com" target="_blank"
+                ><img src="assets/icon/linkedin.svg" alt="Linkedin"
+              /></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </header>

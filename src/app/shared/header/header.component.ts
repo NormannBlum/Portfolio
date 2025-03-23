@@ -9,6 +9,12 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
+  currentLang: 'EN' | 'DE' = 'EN';
+
+  setLanguage(lang: 'EN' | 'DE') {
+    this.currentLang = lang;
+  }
+
   scrollToSection(event: Event, sectionId: string) {
     event.preventDefault();
     const element = document.getElementById(sectionId);

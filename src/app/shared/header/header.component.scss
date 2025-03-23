@@ -28,6 +28,40 @@ header {
   }
 }
 
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.language-toggle {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  .lang-btn {
+    font-family: "Syne";
+    font-weight: 700;
+    font-size: 1rem;
+    position: relative;
+
+    &:not(.active):hover::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      right: 0;
+      width: 50%;
+      height: 2px;
+      background-color: black;
+      transition: width 0.3s ease;
+    }
+
+    &.active {
+      border: 2px solid $primary-hl-color;
+    }
+  }
+}
+
 .hamburger {
   width: 50px;
   height: 50px;
