@@ -79,7 +79,7 @@
         />
         <label for="privacy">
           {{ "contact.contact-form.policy1" | translate
-          }}<a routerLink="/legalnotice">{{
+          }}<a routerLink="/policy">{{
             "contact.contact-form.policy2" | translate
           }}</a
           >{{ "contact.contact-form.policy3" | translate }}
@@ -88,7 +88,6 @@
 
       @if (showSuccessMessage) {
       <div class="success-toast">
-        <!-- <span class="icon">✔</span> -->
         <span>{{ "contact.contact-form.succes-message" | translate }}</span>
       </div>
       }

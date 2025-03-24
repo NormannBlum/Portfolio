@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import {
   TranslatePipe,
   TranslateDirective,
@@ -14,7 +15,7 @@ import {
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  constructor(public translate: TranslateService) {}
+  constructor(public translate: TranslateService, private router: Router) {}
 
   changeLanguage(language: string) {
     this.translate.use(language);
@@ -35,14 +36,13 @@ export class HeaderComponent {
     this.isToggle = !this.isToggle;
   }
 
-  scrollToTop(): void {
-    if (
-      window.location.pathname === '/' ||
-      window.location.pathname === '/index.html'
-    ) {
+  onLogoClick(): void {
+    if (this.router.url === '/' || this.router.url === '/index.html') {
+      // Schon auf der Startseite → nur scrollen
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-      window.location.href = '/';
+      // Auf einer Unterseite → per Router zur Startseite (ohne reload)
+      this.router.navigate(['/']);
     }
   }
 }

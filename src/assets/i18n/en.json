@@ -64,5 +64,95 @@
 
   "footer": {
     "legal": "legal notice"
+  },
+
+  "policy": {
+    "title": "Privacy Policy",
+    "sections": {
+      "1": {
+        "title": "1. Data protection at a glance",
+        "general": {
+          "title": "General information",
+          "text": "The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data is all data that can be used to personally identify you. For detailed information on data protection, please refer to our privacy policy listed below this text."
+        },
+        "data_collection": {
+          "title": "Data collection on this website",
+          "responsible": {
+            "title": "Who is responsible for data collection on this website?",
+            "text": "Data processing on this website is carried out by the website operator. Their contact details can be found in the section 'Information on the responsible body' in this privacy policy."
+          },
+          "how_data": {
+            "title": "How do we collect your data?",
+            "text1": "Your data is collected on the one hand by you communicating it to us. This may, for example, be data that you enter in a contact form.",
+            "text2": "Other data is collected automatically or after your consent when visiting the website by our IT systems. These are mainly technical data (e.g., internet browser, operating system, or time of page access). This data is collected automatically as soon as you enter this website."
+          },
+          "usage": {
+            "title": "What do we use your data for?",
+            "text": "Part of the data is collected to ensure the website is provided without errors. Other data may be used to analyze your user behavior. If contracts are concluded or initiated via the website, the transmitted data will also be processed for contract offers, orders, or other inquiries."
+          },
+          "rights": {
+            "title": "What rights do you have regarding your data?",
+            "text1": "You have the right at any time to receive information free of charge about the origin, recipient, and purpose of your stored personal data. You also have a right to request the correction or deletion of this data.",
+            "text2": "If you have given your consent to data processing, you can revoke this consent at any time for the future.",
+            "text3": "Furthermore, you have the right to request the restriction of the processing of your personal data under certain circumstances.",
+            "text4": "You also have a right to lodge a complaint with the competent supervisory authority.",
+            "text5": "You can contact us at any time for this and other questions on the subject of data protection."
+          }
+        }
+      },
+      "2": {
+        "title": "2. Hosting",
+        "provider": {
+          "text1": "We host the content of our website with the following provider:",
+          "name": "All-Inkl",
+          "text2": "Provider is ALL-INKL.COM - Neue Medien Münnich, Inh. René Münnich, Hauptstraße 68, 02742 Friedersdorf (hereinafter All-Inkl). Details can be found in All-Inkl's privacy policy:",
+          "link": "https://all-inkl.com/datenschutzinformationen/",
+          "text3": "The use of All-Inkl is based on Art. 6 para. 1 lit. f GDPR. We have a legitimate interest in the most reliable possible presentation of our website. If appropriate consent has been requested, processing takes place exclusively on the basis of Art. 6 para. 1 lit. a GDPR and § 25 para. 1 TDDDG, insofar as the consent includes the storage of cookies or access to information in the user's terminal device (e.g., device fingerprinting) within the meaning of the TDDDG. The consent is revocable at any time."
+        }
+      },
+      "3": {
+        "title": "3. General notes and mandatory information",
+        "privacy": {
+          "title": "Privacy",
+          "text1": "The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy policy.",
+          "text2": "When you use this website, various personal data are collected. Personal data are data with which you can be personally identified. This privacy policy explains which data we collect and what we use it for. It also explains how and for what purpose this is done.",
+          "text3": "We point out that data transmission over the Internet (e.g., when communicating by email) can have security gaps. Complete protection of data against access by third parties is not possible."
+        },
+        "responsible": {
+          "title": "Note on the responsible body",
+          "text1": "The responsible body for data processing on this website is:",
+          "address": "Normann Blum\nEduard-Lucas-Str. 59\n45131 Essen",
+          "contact": "Phone: +49 176 55730283\nEmail: kontakt@normann-blum.de",
+          "text2": "The responsible body is the natural or legal person who alone or jointly with others decides on the purposes and means of processing personal data (e.g., names, email addresses, etc.)."
+        },
+        "storage_duration": {
+          "title": "Storage duration",
+          "text": "Unless a more specific storage period has been stated in this privacy policy, your personal data will remain with us until the purpose for data processing no longer applies. If you assert a legitimate request for deletion or revoke your consent to data processing, your data will be deleted unless we have other legally permissible reasons for storing your personal data (e.g., tax or commercial law retention periods); in the latter case, deletion takes place after these reasons cease to apply."
+        },
+        "legal_basis": {
+          "title": "General information on the legal basis for data processing on this website",
+          "text": "If you have consented to data processing, we process your personal data on the basis of Art. 6 para. 1 lit. a GDPR or Art. 9 para. 2 lit. a GDPR if special data categories according to Art. 9 para. 1 GDPR are processed. In the case of explicit consent to the transfer of personal data to third countries, data processing is also based on Art. 49 para. 1 lit. a GDPR. If you have consented to the storage of cookies or to access information in your terminal device (e.g., via device fingerprinting), data processing is also based on § 25 para. 1 TDDDG. Consent can be revoked at any time. If your data is necessary for contract fulfillment or for the implementation of pre-contractual measures, we process your data based on Art. 6 para. 1 lit. b GDPR. Furthermore, we process your data if required to fulfill a legal obligation on the basis of Art. 6 para. 1 lit. c GDPR. Data processing may also be based on our legitimate interest pursuant to Art. 6 para. 1 lit. f GDPR. The relevant legal bases for data processing in each individual case are explained in this privacy policy."
+        },
+        "recipients": {
+          "title": "Recipients of personal data",
+          "text": "In the course of our business activities, we work with various external parties. In some cases, it is also necessary to transmit personal data to these external parties. We only pass on personal data if this is necessary within the framework of contract fulfillment, if we are legally obliged to do so (e.g., transfer of data to tax authorities), if we have a legitimate interest in the transfer pursuant to Art. 6 para. 1 lit. f GDPR, or if another legal basis permits the data transfer. When using processors, we only pass on personal data of our customers based on a valid processing agreement. In the case of joint processing, a joint processing agreement is concluded."
+        }
+      },
+      "4": {
+        "title": "4. Data collection on this website",
+        "contact_form": {
+          "title": "Contact form",
+          "text1": "If you send us inquiries via the contact form, your information from the inquiry form, including the contact data you provided there, will be stored by us for the purpose of processing the inquiry and in case of follow-up questions. We do not pass on this data without your consent.",
+          "text2": "The processing of this data is based on Art. 6 para. 1 lit. b GDPR if your request is related to the performance of a contract or is necessary to carry out pre-contractual measures. In all other cases, processing is based on our legitimate interest in the effective processing of the inquiries addressed to us (Art. 6 para. 1 lit. f GDPR) or on your consent (Art. 6 para. 1 lit. a GDPR) if it has been requested; consent can be revoked at any time.",
+          "text3": "The data you enter in the contact form will remain with us until you request deletion, revoke your consent to storage, or the purpose for data storage no longer applies (e.g., after your request has been processed). Mandatory legal provisions – especially retention periods – remain unaffected."
+        },
+        "email_phone": {
+          "title": "Inquiry by email, telephone, or fax",
+          "text1": "If you contact us by email, telephone, or fax, your request including all resulting personal data (name, request) will be stored and processed by us for the purpose of processing your request. We do not pass on this data without your consent.",
+          "text2": "The processing of this data is based on Art. 6 para. 1 lit. b GDPR if your request is related to the performance of a contract or is necessary to carry out pre-contractual measures. In all other cases, processing is based on our legitimate interest in the effective processing of the inquiries addressed to us (Art. 6 para. 1 lit. f GDPR) or on your consent (Art. 6 para. 1 lit. a GDPR) if it has been requested; consent can be revoked at any time.",
+          "text3": "The data you send to us via contact requests will remain with us until you ask us to delete it, revoke your consent to storage, or the purpose for data storage no longer applies (e.g., after your request has been processed). Mandatory statutory provisions – especially statutory retention periods – remain unaffected."
+        }
+      }
+    }
   }
 }
