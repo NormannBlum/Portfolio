@@ -14,5 +14,14 @@
       "remote": "Remote möglich",
       "message": "Lass uns reden!"
     }
+  },
+
+  "my-skills": {
+    "title": "My skills",
+    "info": {
+      "question": "Fehlt etwas?",
+      "contact": "Schreiben Sie mir,",
+      "learning": "ich lerne gerne etwas Neues!"
+    }
   }
 }

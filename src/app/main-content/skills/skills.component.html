@@ -1,6 +1,6 @@
 <section class="skills" id="my-skills-section">
   <div class="skills-wrapper">
-    <h2>My skills</h2>
+    <h2>{{ "my-skills.title" | translate }}</h2>
     <div class="skills-container">
       <div class="skill-item">
         <img src="../../../assets/icon/angular.png" alt="Angular" />
@@ -46,13 +46,13 @@
     <div class="skills-footer">
       <img src="../../../assets/icon/learning.png" alt="Learning Icon" />
       <p>
-        Don't see the skill you need?
+        {{ "my-skills.info.question" | translate }}
         <a
           href="#contact-section"
           (click)="scrollToSection($event, 'contact-section')"
-          >Contact me</a
+          >{{ "my-skills.info.contact" | translate }}</a
         >
-        I'm always ready to learn!
+        {{ "my-skills.info.learning" | translate }}
       </p>
     </div>
   </div>
