@@ -33,5 +33,23 @@
       "join": "Ein Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
       "pokedex": "Eine simple aufgebaute Bibliothek, basierend auf der PokéAPI, welche verschiedene Pokemon-Informationen bereitstellt und katalogisiert."
     }
+  },
+
+  "contact": {
+    "headline": "Möchten Sie ein neues Projekt besprechen?",
+    "description": "Sagen Sie Hallo! Lassen Sie uns Ihre Ideen besprechen und sie umsetzen.",
+    "contact-form": {
+      "name": "Ihr Name",
+      "email": "Ihre E-Mail",
+      "message": "Ihre Nachricht",
+      "error-name": "Ihre Nachricht ist erforderlich",
+      "error-email": "Ihre E-Mail ist erforderlich",
+      "error-message": "Ihre Nachricht",
+      "policy1": "Ich habe die",
+      "policy2": "Datenschutzrichtlinie",
+      "policy3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+      "send-button": "Sag Hallo ;)",
+      "success-message": "Das hat geklappt!"
+    }
   }
 }

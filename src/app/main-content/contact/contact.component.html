@@ -1,9 +1,9 @@
 <div class="contact-container" id="contact-section">
   <div class="contact-header">
     <h2>Say Hi!</h2>
-    <p class="subheadline">Want to discuss a new project?</p>
+    <p class="subheadline">{{ "contact.headline" | translate }}</p>
     <p class="description">
-      Say hello! Let's discuss your ideas and make it happen.
+      {{ "contact.description" | translate }}
     </p>
   </div>
 
@@ -20,11 +20,13 @@
           placeholder=""
           required
         />
-        <span>Your name</span>
+        <span>{{ "contact.contact-form.name" | translate }}</span>
       </div>
 
       @if (!name.valid && name.touched && !name.disabled) {
-      <p class="form-error">Your name is required</p>
+      <p class="form-error">
+        {{ "contact.contact-form.error-name" | translate }}
+      </p>
       }
 
       <div class="form-field">
@@ -38,11 +40,13 @@
           placeholder=""
           pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
         />
-        <span>Your email</span>
+        <span>{{ "contact.contact-form.email" | translate }}</span>
       </div>
 
       @if (!email.valid && email.touched && !email.disabled) {
-      <p class="form-error">Your email is required</p>
+      <p class="form-error">
+        {{ "contact.contact-form.error-email" | translate }}
+      </p>
       }
 
       <div class="form-field">
@@ -56,10 +60,12 @@
           placeholder=""
           required
         ></textarea>
-        <span>Your message</span>
+        <span>{{ "contact.contact-form.message" | translate }}</span>
 
         @if (!message.valid && message.touched && !message.disabled) {
-        <p class="form-error">Your message is required</p>
+        <p class="form-error">
+          {{ "contact.contact-form.error-message" | translate }}
+        </p>
         }
       </div>
 
@@ -72,15 +78,18 @@
           required
         />
         <label for="privacy">
-          I've read the <a routerLink="/legalnotice">privacy policy</a> and
-          agree to the processing of my data as outlined.
+          {{ "contact.contact-form.policy1" | translate
+          }}<a routerLink="/legalnotice">{{
+            "contact.contact-form.policy2" | translate
+          }}</a
+          >{{ "contact.contact-form.policy3" | translate }}
         </label>
       </div>
 
       @if (showSuccessMessage) {
       <div class="success-toast">
         <!-- <span class="icon">✔</span> -->
-        <span>Message sent successfully!</span>
+        <span>{{ "contact.contact-form.succes-message" | translate }}</span>
       </div>
       }
 
@@ -89,7 +98,7 @@
           type="submit"
           [disabled]="!contactForm.valid || !contactData.privacy"
         >
-          Send message
+          {{ "contact.contact-form.send-button" | translate }}
         </button>
       </div>
     </form>

@@ -33,5 +33,23 @@
       "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
       "pokedex": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
     }
+  },
+
+  "contact": {
+    "headline": "Want to discuss a new project?",
+    "description": "Say hello! Let's discuss your ideas and make it happen.",
+    "contact-form": {
+      "name": "Your name",
+      "email": "Your email",
+      "message": "Your message",
+      "error-name": "Your name is required",
+      "error-email": "Your email is required",
+      "error-message": "Your message is empty",
+      "policy1": "I've read the",
+      "policy2": "privacy policy",
+      "policy3": "and agree to the processing of my data as outlined.",
+      "send-button": "Say hello ;)",
+      "success-message": "Message sent successfully!"
+    }
   }
 }
