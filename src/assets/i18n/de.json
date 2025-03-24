@@ -23,5 +23,15 @@
       "contact": "Schreiben Sie mir,",
       "learning": "ich lerne gerne etwas Neues!"
     }
+  },
+
+  "portfolio": {
+    "title": "Portfolio",
+    "description": {
+      "headline": "Hier finden Sie eine Auswahl meiner Arbeiten - Interagieren Sie den Projekten, um sich einen Überblick von meinen Fähigkeiten zu verschaffen.",
+      "el-pollo-loco": "Ein Jump'n'Run Spiel, welches auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+      "join": "Ein Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+      "pokedex": "Eine simple aufgebaute Bibliothek, basierend auf der PokéAPI, welche verschiedene Pokemon-Informationen bereitstellt und katalogisiert."
+    }
   }
 }

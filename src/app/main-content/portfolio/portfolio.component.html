@@ -1,16 +1,15 @@
 <section class="portfolio" id="portfolio-section">
-  <h2>Portfolio</h2>
+  <h2> {{ "portfolio.title" | translate }}</h2>
   <div class="portfolio-content">
     <p>
-      Explore a selection of my work here - Interact with <br />
-      projects to seemy skills in action.
+      {{ "portfolio.description.headline" | translate }}
     </p>
     <div>
       <app-single-projects
         [projectNumber]="'01/03'"
         [projectTitle]="'El Pollo Loco'"
         [projectSkills]="'JavaScript | HTML | CSS'"
-        [projectDescription]="polloloco"
+        [projectDescription]="'portfolio.description.el-pollo-loco' | translate"
         [projectImage]="'./assets/img/elpolloloco.png'"
         [projectGithub]="'https://github.com/NormannBlum/ElPolloLoco'"
         [projectLink]="'https://elpolloloco.normann-blum.de/'"
@@ -20,7 +19,7 @@
         [projectNumber]="'02/03'"
         [projectTitle]="'Join'"
         [projectSkills]="'Angular | TypeScript | HTML | CSS | Firebase'"
-        [projectDescription]="join"
+        [projectDescription]="'portfolio.description.join' | translate"
         [projectImage]="'./assets/img/join.jpg'"
         [projectGithub]="'https://github.com/NormannBlum/Join'"
         [projectLink]="'https://join.normann-blum.de/'"
@@ -31,7 +30,7 @@
         [projectNumber]="'03/03'"
         [projectTitle]="'Pokédex'"
         [projectSkills]="'JavaScript | HTML | CSS | Api'"
-        [projectDescription]="pokedex"
+        [projectDescription]="'portfolio.description.pokedex' | translate"
         [projectImage]="'./assets/img/pokedex.png'"
         [projectGithub]="'https://github.com/NormannBlum/Pokedex'"
         [projectLink]="'https://pokedex.normann-blum.de/'"
