@@ -3,17 +3,18 @@
 .legalnotice {
   @include dFlex($fd: column);
   text-align: center;
-  padding: 2rem;
+  min-height: 85vh;
   max-width: 1440px;
   margin: 0 auto;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 10vw, 5rem);
+  color: $primary-hl-color;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 10vw, 2.5rem);
   margin-top: 4rem;
-  font-family: Overpass;
+  color: $primary-hl-color;
 }

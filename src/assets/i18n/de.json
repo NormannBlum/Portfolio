@@ -51,5 +51,18 @@
       "send-button": "Sag Hallo ;)",
       "success-message": "Das hat geklappt!"
     }
+  },
+
+  "legalnotice": {
+    "title": "Impressum",
+    "legal": "Angaben gemäß § 5 TMG",
+    "contact": {
+      "title": "Kontakt",
+      "phone": "Telefon: +49 176 55730283"
+    }
+  },
+
+  "footer": {
+    "legal": "Impressum"
   }
 }

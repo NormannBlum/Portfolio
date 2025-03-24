@@ -51,5 +51,18 @@
       "send-button": "Say hello ;)",
       "success-message": "Message sent successfully!"
     }
+  },
+
+  "legalnotice": {
+    "title": "Imprint",
+    "legal": "Information according to § 5 TMG",
+    "contact": {
+      "title": "Contact",
+      "phone": "Phone: +49 176 55730283"
+    }
+  },
+
+  "footer": {
+    "legal": "legal notice"
   }
 }
