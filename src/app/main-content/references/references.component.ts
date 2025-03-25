@@ -18,4 +18,22 @@ export class ReferencesComponent {
   changeLanguage(language: string) {
     this.translate.use(language);
   }
+
+  referenceList = [
+    {
+      name: 'Marco Gollmer',
+      position: 'Team Partner',
+      text: 'references.text1',
+    },
+    {
+      name: 'Philipp Franke',
+      position: 'Team Partner',
+      text: 'references.text2',
+    },
+    {
+      name: 'Martin Bock',
+      position: 'Team Partner',
+      text: 'references.text3',
+    },
+  ];
 }

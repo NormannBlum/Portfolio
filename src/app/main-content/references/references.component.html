@@ -1,11 +1,17 @@
 <section class="references">
   <h2>{{ "references.title" | translate }}</h2>
   <div class="references-content">
-    <p>
-      {{ "references.description" | translate }}
-    </p>
+    <p>{{ "references.description" | translate }}</p>
 
-    <div class="single-references">
+    <div class="references-cards">
+      @for (ref of referenceList; track ref) {
+      <div class="reference-card">
+        <span class="quote">,,</span>
+        <h3>{{ ref.name }}</h3>
+        <p class="position">{{ ref.position }}</p>
+        <p class="text">{{ ref.text | translate }}</p>
+      </div>
+      }
     </div>
   </div>
 </section>
