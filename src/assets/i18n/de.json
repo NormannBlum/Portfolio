@@ -35,6 +35,14 @@
     }
   },
 
+  "references": {
+    "title": "Referenzen",
+    "description": "Ich arbeite erfolgreich alleine, aber auch sehr gerne in einem Team. Hier sehen sie, was meine Kollegen über die Zusammenarbeit mit mir zu sagen haben.",
+    "text1": "",
+    "text2": "",
+    "text3": ""
+  },
+
   "contact": {
     "headline": "Möchten Sie ein neues Projekt besprechen?",
     "description": "Sagen Sie Hallo! Lassen Sie uns Ihre Ideen besprechen und sie umsetzen.",

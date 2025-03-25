@@ -35,6 +35,14 @@
     }
   },
 
+  "references": {
+    "title": "References",
+    "description": "I work successfully on my own, but I also enjoy working in a team. Here you can see what my colleagues have to say about working with me.",
+    "text1": "",
+    "text2": "",
+    "text3": ""
+  },
+
   "contact": {
     "headline": "Want to discuss a new project?",
     "description": "Say hello! Let's discuss your ideas and make it happen.",
