@@ -58,6 +58,7 @@ h1 {
   transform: rotate(-90deg);
   font-size: $paragraph-font-size;
   bottom: 10rem;
+  font-size: clamp(20px, 3vw, 22px);
 }
 
 .scroll-down-container {
@@ -77,7 +78,7 @@ h1 {
   right: 0rem;
   bottom: 2rem;
   margin: 0;
-  font-size: $paragraph-font-size;
+  font-size: clamp(20px, 3vw, 22px);
 }
 
 @keyframes arrow-down-slide {

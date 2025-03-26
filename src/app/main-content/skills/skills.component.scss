@@ -100,9 +100,9 @@
   }
 
   > p {
-    font-size: 1rem;
     font-weight: bold;
     color: black;
+    font-size: clamp(20px, 3vw, 22px);
 
     > a {
       color: $primary-hl-color;

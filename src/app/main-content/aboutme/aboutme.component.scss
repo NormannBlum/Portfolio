@@ -45,6 +45,7 @@
     flex-direction: column;
     gap: 1.5rem;
     max-width: 50%;
+    font-size: clamp(20px, 3vw, 22px);
 
     @media (max-width: 1024px) {
       max-width: 100%;
@@ -66,8 +67,8 @@
       }
 
       > span {
-        font-size: 1rem;
         text-align: left;
+        font-size: clamp(20px, 3vw, 22px);
       }
     }
   }
@@ -79,9 +80,9 @@
     margin-top: 2rem;
     padding: 1rem 3rem;
     font-family: "Overpass";
-    font-size: 1rem;
     border: 4px solid #000;
     transition: all 0.3s ease;
+    font-size: clamp(20px, 3vw, 22px);
 
     &:hover {
       transform: scaleX(1.1);

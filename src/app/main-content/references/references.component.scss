@@ -17,7 +17,7 @@
 .references-content {
   > p {
     margin-bottom: 3rem;
-    font-size: 22px;
+    font-size: clamp(20px, 3vw, 22px);
   }
 }
 
@@ -29,7 +29,6 @@
 }
 
 .reference-card {
-  // min-width: 290px;
   max-width: 400px;
   border: 4px solid #000;
   padding: 1rem;

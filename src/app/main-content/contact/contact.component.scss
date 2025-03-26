@@ -28,7 +28,7 @@
   > h2 {
     align-self: flex-start;
     font-weight: 800;
-    margin-top: 8rem;
+    margin-top: 9rem;
     margin-bottom: 3.5rem;
 
     &:hover {
@@ -37,14 +37,14 @@
   }
 
   .subheadline {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: $primary-hl-color;
     margin-bottom: 1rem;
   }
 
   .description {
-    font-size: 1.1rem;
+    font-size: clamp(20px, 3vw, 22px);
     margin-bottom: 1rem;
   }
 
