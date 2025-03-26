@@ -61,13 +61,13 @@
           required
         ></textarea>
         <span>{{ "contact.contact-form.message" | translate }}</span>
-
-        @if (!message.valid && message.touched && !message.disabled) {
-        <p class="form-error">
-          {{ "contact.contact-form.error-message" | translate }}
-        </p>
-        }
       </div>
+
+      @if (!message.valid && message.touched && !message.disabled) {
+      <p class="form-error">
+        {{ "contact.contact-form.error-message" | translate }}
+      </p>
+      }
 
       <div class="privacy-checkbox">
         <input
@@ -88,7 +88,7 @@
 
       @if (showSuccessMessage) {
       <div class="success-toast">
-        <span>{{ "contact.contact-form.succes-message" | translate }}</span>
+        <span>{{ "contact.contact-form.success-message" | translate }}</span>
       </div>
       }
 
