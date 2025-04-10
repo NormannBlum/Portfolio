@@ -5,6 +5,11 @@ import {
   TranslateService,
 } from '@ngx-translate/core';
 
+/**
+ * `ReferencesComponent` displays a list of references or testimonials.
+ *
+ * It supports language switching via `@ngx-translate/core`.
+ */
 @Component({
   selector: 'app-references',
   standalone: true,
@@ -13,12 +18,25 @@ import {
   styleUrl: './references.component.scss',
 })
 export class ReferencesComponent {
+  /**
+   * Creates an instance of `ReferencesComponent`.
+   *
+   * @param translate The translation service used to switch languages.
+   */
   constructor(public translate: TranslateService) {}
 
+  /**
+   * Switches the application's active language.
+   *
+   * @param language The language key to use (e.g. 'en', 'de').
+   */
   changeLanguage(language: string) {
     this.translate.use(language);
   }
 
+  /**
+   * List of reference entries, each containing a name, position, and a translation key for the text.
+   */
   referenceList = [
     {
       name: 'Marco Gollmer',
