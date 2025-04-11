@@ -9,6 +9,12 @@ import { ReferencesComponent } from './references/references.component';
 import { ArrowAnimationRightComponent } from '../shared/arrow-animation-right/arrow-animation-right.component';
 import { ArrowAnimationLeftComponent } from '../shared/arrow-animation-left/arrow-animation-left.component';
 
+/**
+ * `MainContentComponent` serves as the container for the primary sections of the page.
+ *
+ * It includes subcomponents for hero, about me, skills, portfolio, contact,
+ * references, and decorative arrow animations.
+ */
 @Component({
   selector: 'app-main-content',
   standalone: true,
@@ -22,7 +28,6 @@ import { ArrowAnimationLeftComponent } from '../shared/arrow-animation-left/arro
     ReferencesComponent,
     ArrowAnimationRightComponent,
     ArrowAnimationLeftComponent,
-    ReferencesComponent,
   ],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss',
