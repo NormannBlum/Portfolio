@@ -8,21 +8,20 @@
   <div class="right-section">
     <div class="language-toggle">
       <button
-  class="lang-btn"
-  [class.active]="translate.currentLang === 'en'"
-  (click)="changeLanguage('en')"
->
-  EN
-</button>
+        class="lang-btn"
+        [class.active]="translate.currentLang === 'en'"
+        (click)="changeLanguage('en')"
+      >
+        EN
+      </button>
 
-<button
-  class="lang-btn"
-  [class.active]="translate.currentLang === 'de'"
-  (click)="changeLanguage('de')"
->
-  DE
-</button>
-
+      <button
+        class="lang-btn"
+        [class.active]="translate.currentLang === 'de'"
+        (click)="changeLanguage('de')"
+      >
+        DE
+      </button>
     </div>
 
     <nav>
@@ -38,27 +37,21 @@
             <a
               href="#about-me-section"
               (click)="scrollToSection($event, 'about-me-section')"
-              >{{
-                "header-component-links.aboutme" | translate
-              }}</a
+              >{{ "header-component-links.aboutme" | translate }}</a
             >
           </div>
           <div class="component-links">
             <a
               href="#my-skills-section"
               (click)="scrollToSection($event, 'my-skills-section')"
-              >{{
-                "header-component-links.mySkills" | translate
-              }}</a
+              >{{ "header-component-links.mySkills" | translate }}</a
             >
           </div>
           <div class="component-links">
             <a
               href="#portfolio-section"
               (click)="scrollToSection($event, 'portfolio-section')"
-              >{{
-                "header-component-links.portfolio" | translate
-              }}</a
+              >{{ "header-component-links.portfolio" | translate }}</a
             >
           </div>
           <div class="overlay-footer">
