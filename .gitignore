@@ -40,3 +40,7 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Spec-Kit: ignore Markdown-Dateien unter /speckit
+/speckit/**/*.md
+speckit
