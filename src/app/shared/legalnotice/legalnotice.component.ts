@@ -11,11 +11,10 @@ import {
  * It provides multilingual support and ensures the page is scrolled to the top on load.
  */
 @Component({
-  selector: 'app-legalnotice',
-  standalone: true,
-  imports: [TranslatePipe],
-  templateUrl: './legalnotice.component.html',
-  styleUrl: './legalnotice.component.scss',
+    selector: 'app-legalnotice',
+    imports: [TranslatePipe],
+    templateUrl: './legalnotice.component.html',
+    styleUrl: './legalnotice.component.scss'
 })
 export class LegalnoticeComponent implements OnInit {
   /**

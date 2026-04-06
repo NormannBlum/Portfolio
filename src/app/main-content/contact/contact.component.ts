@@ -16,11 +16,10 @@ import {
  * The component also supports language switching via `@ngx-translate/core`.
  */
 @Component({
-  selector: 'app-contact',
-  standalone: true,
-  imports: [FormsModule, RouterLink, CommonModule, TranslatePipe],
-  templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss',
+    selector: 'app-contact',
+    imports: [FormsModule, RouterLink, CommonModule, TranslatePipe],
+    templateUrl: './contact.component.html',
+    styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
   /**

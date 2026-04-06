@@ -7,11 +7,10 @@ import { Component, Input } from '@angular/core';
  * It supports layout customization through the `reverseLayout` flag.
  */
 @Component({
-  selector: 'app-single-projects',
-  standalone: true,
-  imports: [],
-  templateUrl: './single-projects.component.html',
-  styleUrl: './single-projects.component.scss',
+    selector: 'app-single-projects',
+    imports: [],
+    templateUrl: './single-projects.component.html',
+    styleUrl: './single-projects.component.scss'
 })
 export class SingleProjectsComponent {
   @Input() projectNumber = '';
