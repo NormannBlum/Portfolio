@@ -12,11 +12,10 @@ import {
  * It includes language switching functionality and a scroll-to-top button.
  */
 @Component({
-  selector: 'app-footer',
-  standalone: true,
-  imports: [RouterLink, TranslatePipe],
-  templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss',
+    selector: 'app-footer',
+    imports: [RouterLink, TranslatePipe],
+    templateUrl: './footer.component.html',
+    styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
   /**

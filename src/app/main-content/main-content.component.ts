@@ -16,20 +16,19 @@ import { ArrowAnimationLeftComponent } from '../shared/arrow-animation-left/arro
  * references, and decorative arrow animations.
  */
 @Component({
-  selector: 'app-main-content',
-  standalone: true,
-  imports: [
-    CommonModule,
-    HeroComponent,
-    AboutmeComponent,
-    SkillsComponent,
-    PortfolioComponent,
-    ContactComponent,
-    ReferencesComponent,
-    ArrowAnimationRightComponent,
-    ArrowAnimationLeftComponent,
-  ],
-  templateUrl: './main-content.component.html',
-  styleUrl: './main-content.component.scss',
+    selector: 'app-main-content',
+    imports: [
+        CommonModule,
+        HeroComponent,
+        AboutmeComponent,
+        SkillsComponent,
+        PortfolioComponent,
+        ContactComponent,
+        ReferencesComponent,
+        ArrowAnimationRightComponent,
+        ArrowAnimationLeftComponent,
+    ],
+    templateUrl: './main-content.component.html',
+    styleUrl: './main-content.component.scss'
 })
 export class MainContentComponent {}

@@ -13,11 +13,10 @@ import {
  * It also supports dynamic language switching using `@ngx-translate/core`.
  */
 @Component({
-  selector: 'app-portfolio',
-  standalone: true,
-  imports: [SingleProjectsComponent, TranslatePipe],
-  templateUrl: './portfolio.component.html',
-  styleUrl: './portfolio.component.scss',
+    selector: 'app-portfolio',
+    imports: [SingleProjectsComponent, TranslatePipe],
+    templateUrl: './portfolio.component.html',
+    styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
   /**

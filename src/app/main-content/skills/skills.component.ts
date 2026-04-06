@@ -11,11 +11,10 @@ import {
  * It includes support for language switching and smooth scrolling to other sections.
  */
 @Component({
-  selector: 'app-skills',
-  standalone: true,
-  imports: [TranslatePipe],
-  templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss'],
+    selector: 'app-skills',
+    imports: [TranslatePipe],
+    templateUrl: './skills.component.html',
+    styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
   /**

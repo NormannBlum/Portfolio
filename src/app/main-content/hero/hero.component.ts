@@ -6,10 +6,9 @@ import { Component } from '@angular/core';
  * Typically used to display an introductory headline, subheadline, or call-to-action.
  */
 @Component({
-  selector: 'app-hero',
-  standalone: true,
-  imports: [],
-  templateUrl: './hero.component.html',
-  styleUrl: './hero.component.scss',
+    selector: 'app-hero',
+    imports: [],
+    templateUrl: './hero.component.html',
+    styleUrl: './hero.component.scss'
 })
 export class HeroComponent {}

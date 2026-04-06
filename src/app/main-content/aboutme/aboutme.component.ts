@@ -12,11 +12,10 @@ import {
  * Provides functionality for language switching and smooth scrolling to sections within the component.
  */
 @Component({
-  selector: 'app-aboutme',
-  standalone: true,
-  imports: [CommonModule, TranslatePipe],
-  templateUrl: './aboutme.component.html',
-  styleUrl: './aboutme.component.scss',
+    selector: 'app-aboutme',
+    imports: [CommonModule, TranslatePipe],
+    templateUrl: './aboutme.component.html',
+    styleUrl: './aboutme.component.scss'
 })
 export class AboutmeComponent {
   /**

@@ -13,11 +13,10 @@ import {
  * It includes language switching, navigation to sections, responsive menu toggling, and a clickable logo.
  */
 @Component({
-  selector: 'app-header',
-  standalone: true,
-  imports: [CommonModule, TranslatePipe],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss',
+    selector: 'app-header',
+    imports: [CommonModule, TranslatePipe],
+    templateUrl: './header.component.html',
+    styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
   /**

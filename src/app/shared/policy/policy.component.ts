@@ -11,11 +11,10 @@ import {
  * It includes translation support and ensures the page scrolls to the top on load.
  */
 @Component({
-  selector: 'app-policy',
-  standalone: true,
-  imports: [TranslatePipe],
-  templateUrl: './policy.component.html',
-  styleUrl: './policy.component.scss',
+    selector: 'app-policy',
+    imports: [TranslatePipe],
+    templateUrl: './policy.component.html',
+    styleUrl: './policy.component.scss'
 })
 export class PolicyComponent implements OnInit {
   /**
