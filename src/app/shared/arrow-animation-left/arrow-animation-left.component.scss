@@ -1,4 +1,4 @@
-@import "./../../../styles.scss";
+@use "./../../../styles/index" as *;
 
 .arrow-left-container {
     @include dFlex($ai: flex-start, $jc: center, $fd: column);

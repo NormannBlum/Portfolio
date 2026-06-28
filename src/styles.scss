@@ -1,6 +1,4 @@
-@import "./styles/mixins.scss";
-@import "./styles/variables.scss";
-@import "./styles/fonts.scss";
+@use "./styles/index" as *;
 
 * {
   margin: 0;

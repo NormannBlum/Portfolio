@@ -1,4 +1,4 @@
-@import "./../../../styles.scss";
+@use "./../../../styles/index" as *;
 
 .legalnotice {
   @include dFlex($fd: column);

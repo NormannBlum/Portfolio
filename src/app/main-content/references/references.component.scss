@@ -1,4 +1,4 @@
-@import "./../../../styles.scss";
+@use "./../../../styles/index" as *;
 
 .references {
   @include dFlex($ai: center, $jc: flex-start, $fd: column);
